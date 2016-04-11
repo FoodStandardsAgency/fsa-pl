@@ -1,4 +1,4 @@
-# ONS pattern library
+# Pattern library
 
 A tile design friendly pattern library with a simple responsive grid inspired by BBC’s GEL consisting of 16px columns.
 
@@ -16,7 +16,7 @@ Optional (for local development of the pattern library):
 * New JS files go into the `js` directory and the path added into the config object in the package.json. You'll need to restart `npm run watch` afterwards.
 * New SCSS files should be added to the `scss` directory. Add the path into `main.scss` and `old-ie.scss`. 
 
-[site]: <https://onsdigital.github.io/ons-pattern-library>
+[site]: <https://http://onsdigital.github.io/ons-pattern-library-starter/>
 [node]: <https://nodejs.org/en/>
 [npm]: <https://www.npmjs.com/>
 [python]: <https://www.python.org/>
