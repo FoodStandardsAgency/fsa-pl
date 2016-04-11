@@ -3,8 +3,8 @@
 ul.minical {
     position: absolute;
     display: none;
-    color: $ship-grey;
-    background: $iron-light;
+    color: $dark-grey;
+    background: $light-grey;
     margin: 0;
     padding: 0;
     text-shadow: none;
@@ -34,9 +34,9 @@ ul.minical {
             float: left;
             width: 100%;
             header {
-                background: transparentize($aluminium, 0.5);
-                color: $ship-grey;
-                border: 1px solid $aluminium;
+                background: transparentize($mid-grey, 0.5);
+                color: $dark-grey;
+                border: 1px solid $mid-grey;
                 position: relative;
                 h5 {
                     font-size: 14px;
@@ -58,7 +58,7 @@ ul.minical {
                             content: "";
                             border-top: 6px solid transparent;
                             border-bottom: 6px solid transparent;
-                            border-right: 6px solid $thunder;
+                            border-right: 6px solid $black;
                             position: absolute;
                             left: 5px;
                             top: 19px;
@@ -71,7 +71,7 @@ ul.minical {
                             content: "";
                             border-top: 6px solid transparent;
                             border-bottom: 6px solid transparent;
-                            border-left: 6px solid $thunder;
+                            border-left: 6px solid $black;
                             position: absolute;
                             right: 5px;
                             top: 19px;
@@ -86,7 +86,7 @@ ul.minical {
                     text-align: center;
 
                     a {
-                        background-color: $matisse;
+                        background-color: $mid-blue;
                         color: $white;
                         display: inline-block;
                         padding: 0 8px;
@@ -98,7 +98,7 @@ ul.minical {
                         &:hover,
                         &:focus {
                             text-decoration: none;
-                            background-color: $blumine;
+                            background-color: $mid-blue;
                         }
                     }
                 }
@@ -113,16 +113,16 @@ ul.minical {
                                 padding: 5px 0 0 0;
                                 font-size: 0.7em;
                                 font-weight: bold;
-                                color: $ship-grey;
+                                color: $dark-grey;
                                 text-align: center;
-                                border-bottom: 1px solid transparentize($aluminium, 0.5);
+                                border-bottom: 1px solid transparentize($mid-grey, 0.5);
                             }
                         }
                     }
                     tbody {
                         tr {
 
-                            border-left: 1px solid transparentize($aluminium, 0.5);
+                            border-left: 1px solid transparentize($mid-grey, 0.5);
 
                             td {
                                 padding: 0;
@@ -132,9 +132,9 @@ ul.minical {
                                     height: ($baseline * 4);
                                     width: ($baseline * 4);
                                     display: block;
-                                    border-right: 1px solid transparentize($aluminium, 0.5);
-                                    border-bottom: 1px solid transparentize($aluminium, 0.5);
-                                    color: $ship-grey;
+                                    border-right: 1px solid transparentize($mid-grey, 0.5);
+                                    border-bottom: 1px solid transparentize($mid-grey, 0.5);
+                                    color: $dark-grey;
                                     padding: 4px 4px 4px 4px;
                                     text-decoration: none;
                                     position: relative;
@@ -142,28 +142,28 @@ ul.minical {
                                 }
                                 &.minical_highlighted a {
                                     background-color: transparentize($active, 0.5);
-                                    color: $ship-grey;
+                                    color: $dark-grey;
                                 }
                                 &.minical_selected a {
                                     background: $active;
-                                    color: $iron-light;
+                                    color: $light-grey;
                                 }
                                 &.minical_past_month a,
                                 &.minical_future_month a {
-                                    color: transparentize($ship-grey, 0.5);
+                                    color: transparentize($dark-grey, 0.5);
                                 }
                                 &.minical_today a:after {
                                     content: '';
                                     position: absolute;
-                                    border-top: 8px solid $thunder;
+                                    border-top: 8px solid $black;
                                     border-left: 8px solid transparent;
                                     top: 0;
                                     right: -1px;
                                 }
                                 &.minical_disabled a {
-                                    color: transparentize($ship-grey, 0.5);
-                                    background: transparentize($aluminium, 0.8);
-                                    border-color: transparentize($aluminium, 0.8);
+                                    color: transparentize($dark-grey, 0.5);
+                                    background: transparentize($mid-grey, 0.8);
+                                    border-color: transparentize($mid-grey, 0.8);
                                 }
                             }
                         }

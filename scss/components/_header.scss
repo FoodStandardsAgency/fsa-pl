@@ -4,12 +4,12 @@
 
 .primary-nav {
 
-    background-color: $abbey;
+    background-color: $dark-grey;
     position: relative;
 
     @include breakpoint(md) {
-        border-top: 1px solid $thunder;
-        border-bottom: 1px solid $thunder;
+        border-top: 1px solid $black;
+        border-bottom: 1px solid $black;
         height: 88px;
     }
 
@@ -43,7 +43,7 @@
             height: 86px;
 
             &:nth-child(6) a {
-                border-right: 1px solid $thunder;
+                border-right: 1px solid $black;
             }
         }
 
@@ -55,7 +55,7 @@
         &:hover > ul,
         &--focus > ul {
             @include breakpoint(md) {
-                background-color: $thunder;
+                background-color: $black;
                 color: $white;
                 text-decoration: none;
                 left: auto; //resets child-items to appear on-screen
@@ -72,8 +72,8 @@
         &:focus > a,
         &--focus > a {
             @include breakpoint(md) {
-                border-left: 1px solid $thunder;
-                background-color: $thunder;
+                border-left: 1px solid $black;
+                background-color: $black;
                 color: $white;
                 text-decoration: none;
             }
@@ -98,7 +98,7 @@
     }
 
     &__link {
-        color: $iron-light;
+        color: $light-grey;
         text-decoration: none;
 
         @include breakpoint(sm) {
@@ -109,7 +109,7 @@
         @include breakpoint(md) {
             display: inline-block;
             padding: 5px $baseline*2 3px $baseline*2;
-            border-left: 1px solid $thunder;
+            border-left: 1px solid $black;
             height: 86px;
             font-size: 13px; // smaller font on medium for retina screens
         }
@@ -122,8 +122,8 @@
         //set focus styling - has to be on link to work (hover styling on li)
         &:focus {
             @include breakpoint(md) {
-                border-left: 1px solid $thunder;
-                background-color: $thunder;
+                border-left: 1px solid $black;
+                background-color: $black;
                 color: $white;
                 text-decoration: none;
             }
@@ -132,7 +132,7 @@
         //show sub-menu on keyboard focus of link
         &:focus + ul {
             @include breakpoint(md) {
-                background-color: $thunder;
+                background-color: $black;
                 text-decoration: none;
                 left: auto; //resets child-items to appear on-screen
                 top: 86px; //2px less to cover same colour border on parent <li>
@@ -158,7 +158,7 @@
 
         @include breakpoint(sm) {
             //display: none; //done with js-nav-hidden class
-            background-color: $ship-grey;
+            background-color: $dark-grey;
             padding: 0;
         }
 
@@ -167,7 +167,7 @@
             padding: 0;
             z-index: 10;
             left: -99999px; //used instead of display:none so it's accessible to screen readers
-            border: 1px solid $thunder;
+            border: 1px solid $black;
         }
     }
 
@@ -177,7 +177,7 @@
         padding: 0;
 
         &--active {
-            background-color: $cod-gray;
+            background-color: $black;
         }
     }
 
@@ -196,9 +196,9 @@
             &:hover,
             &:focus {
                 outline: 0;
-                background-color: $iron;
+                background-color: $mid-grey;
                 text-decoration: none;
-                color: $abbey;
+                color: $dark-grey;
             }
         }
     }
@@ -253,7 +253,7 @@
 .js-expandable-active {
     @include breakpoint(sm) {
         & > a {
-            background-color: $thunder;
+            background-color: $black;
             //border-bottom: 1px solid $thunder;
         }
 
@@ -281,7 +281,7 @@
         & > a {
             &:before {
                 position: absolute;
-                color: $iron-light;
+                color: $light-grey;
                 content: '+';
                 left: $col;
 
@@ -318,24 +318,24 @@
     }
 
     &__menu {
-        background-color: $ship-grey;
+        background-color: $dark-grey;
         font-size: 17px;
         float: left;
         width: 50%;
         //padding-left: $col;
         padding: $baseline*2 $col;
-        color: $iron-light;
-        border-right: 1px solid $thunder;
+        color: $light-grey;
+        border-right: 1px solid $black;
     }
 
     &__search {
-        background-color: $ship-grey;
+        background-color: $dark-grey;
         font-size: 17px;
         float: left;
         width: 50%;
         //padding-left: $col;
         padding: $baseline*2 $col;
-        color: $iron-light;
+        color: $light-grey;
         // border-bottom: 1px solid $ship-grey;
         // margin-bottom: -1px;
     }
@@ -343,13 +343,13 @@
 
 .menu-is-expanded {
     & > a {
-        background-color: $abbey;
+        background-color: $dark-grey;
     }
 }
 
 .search-is-expanded {
     & > a {
-        background-color: $abbey;
+        background-color: $dark-grey;
     }
 }
 
@@ -370,7 +370,7 @@
 // BETA BANNER
 
 .beta-banner {
-    background-color: $carrot;
+    background-color: $mid-yellow;
 
     @media print {
         display: none;
@@ -381,12 +381,12 @@
         //padding: 7px 0 9px 0;
 
         & > a {
-            color: $ship-grey;
+            color: $dark-grey;
             text-decoration: underline;
 
             &:hover,
             &:focus {
-                color: $thunder;
+                color: $black;
             }
 
         }
@@ -449,7 +449,7 @@
 
     &__link {
         padding: 0 8px 0 8px;
-        border-right: 1px solid $iron-light;
+        border-right: 1px solid $light-grey;
 
         &--active {
             @include breakpoint(sm) {
@@ -466,7 +466,7 @@
     left: -99999px;
 
     &:focus {
-        background: $ship-grey;
+        background: $dark-grey;
         color: $white;
         top: 0;
         right: 0;

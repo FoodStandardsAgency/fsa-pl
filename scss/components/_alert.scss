@@ -1,9 +1,9 @@
 //_alert.scss
 
 .alert {
-	background-color: $abbey;
+	background-color: $dark-grey;
 	padding: ($baseline * 2) 0 ($baseline * 3) 0;
-	color: $iron;
+	color: $mid-grey;
 
 	@media print {
 		display: none;

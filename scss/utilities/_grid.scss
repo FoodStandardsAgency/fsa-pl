@@ -3,7 +3,7 @@
 
 //--[vars]--
 
-// $baseline: 16px;
+$baseline: 8px;
 
 $col: 16px;
 $gutter: 16px;
@@ -83,7 +83,7 @@ $medium-cols-three-quarters: (($medium-complex-grid-cols - 1) * $col) - $medium-
 }
 
 @mixin medium-cols-offset {
-  @for $i from 1 through $large-complex-grid-cols {
+  @for $i from 1 through $medium-complex-grid-cols {
   &--md-offset-#{$i} {
   	margin-left: $col * $i;
    }

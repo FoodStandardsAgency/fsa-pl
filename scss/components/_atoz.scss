@@ -27,15 +27,15 @@
             margin: 0;
             width: ($col * 3);
             height: ($baseline * 6);
-            border-right: 1px solid $astral;
-            border-bottom: 1px solid $astral;
+            border-right: 1px solid $mid-blue;
+            border-bottom: 1px solid $mid-blue;
 
             a {
-                background: $ship-grey;
+                background: $dark-grey;
                 display: block;
                 width: 100%;
                 height: 100%;
-                color: $iron-light;
+                color: $light-grey;
                 font-size: 21px;
                 text-align: center;
                 text-decoration: none;
@@ -43,8 +43,8 @@
 
                 &:hover,
                 &:focus {
-                    background: $iron;
-                    color: $ship-grey;
+                    background: $mid-grey;
+                    color: $dark-grey;
                 }
             }
         }

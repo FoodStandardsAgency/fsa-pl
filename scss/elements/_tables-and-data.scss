@@ -42,15 +42,15 @@ dd {
     display: table;
     border-collapse: collapse;
     background-color: white;
-    border-bottom: 1px solid $iron;
-    border-left: 1px solid $iron;
-    border-right: 1px solid $iron;
+    border-bottom: 1px solid $mid-grey;
+    border-left: 1px solid $mid-grey;
+    border-right: 1px solid $mid-grey;
 
     th {
         text-align: left;
         position: relative; //Relative container for absolutely positioned arrow
         padding: 0;
-        background-color: $iron;
+        background-color: $mid-grey;
 
         button {
             line-height: $base-line-height;
@@ -102,7 +102,7 @@ dd {
         }
 
         tr:not(:last-of-type) {
-            border-bottom: solid 1px $iron;
+            border-bottom: solid 1px $mid-grey;
         }
 
         tr {
@@ -111,7 +111,7 @@ dd {
 
             &:hover,
             &:focus {
-                background-color: $abbey;
+                background-color: $dark-grey;
                 color: white;
 
                 // Change the colour of arrow buttons for show/hide sections within highlighted table rows
@@ -134,7 +134,7 @@ dd {
 
     &__header {
         padding: 4px 0 4px 0;
-        border-bottom: 1px solid $silver;
+        border-bottom: 1px solid $mid-grey;
         margin-bottom: -1px;
     }
 

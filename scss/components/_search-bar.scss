@@ -3,13 +3,13 @@
 .search {
 
     @include breakpoint(sm) {
-        background-color: $abbey;
+        background-color: $dark-grey;
     }
 
     @include breakpoint(md) {
         //border-top: 1px solid $thunder;
         //margin-top: -1px;	//compensate for border-top
-        background-color: $ship-grey;
+        background-color: $dark-grey;
         font-size: 17px;
         height: 80px;
         // height: 97px;
@@ -23,7 +23,7 @@
         height: ($baseline * 24);
 
         h1 {
-            color: $iron-light;
+            color: $light-grey;
             margin: ($baseline * 2) 0 $baseline 0;
         }
 
@@ -42,7 +42,7 @@
         font-family: $base-font-family;
         font-weight: $base-font-weight;
         line-height: $base-line-height;
-        color: $iron-light;
+        color: $light-grey;
         padding: ($baseline * 2) 0 ($baseline * 2) ($baseline * 2);
 
         @if $old-ie == false {
@@ -57,9 +57,9 @@
         font-weight: $base-font-weight;
         line-height: $base-line-height;
         font-size: 17px;
-        color: $iron-light;
+        color: $light-grey;
         padding: 12px $col 12px $col;
-        background-color: $abbey;
+        background-color: $dark-grey;
 
         @if $old-ie == false {
             @include breakpoint(sm) {
@@ -74,7 +74,7 @@
         line-height: $base-line-height;
         //font-style: italic;
         font-size: 17px;
-        color: $ship-grey;
+        color: $dark-grey;
         border: none;
         padding: 6px $col 4px $col;
         height: ($baseline * 6);

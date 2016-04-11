@@ -43,7 +43,7 @@ button {
 
         &:hover,
         &:focus {
-            background-color: $thunder;
+            background-color: $black;
         }
     }
 
@@ -61,36 +61,36 @@ button {
     &--secondary-disabled,
     &--secondary-disabled:hover,
     &--secondary-disabled:focus {
-        color: $nevada;
+        color: $dark-grey;
         background: $disabled;
         cursor: not-allowed;
     }
 
     &--tertiary {
-        background-color: $blumine;
-        color: $iron-light;
+        background-color: $mid-blue;
+        color: $light-grey;
 
         &:hover,
         &:focus {
-            background-color: darken($blumine, 8%);
+            background-color: darken($mid-blue, 8%);
         }
     }
 
     &--plain {
         background-color: $white;
-        color: $matisse;
+        color: $mid-blue;
         text-decoration: underline;
 
         &:not(span):hover,
         &:not(span):focus {
-            background: $gallery;
+            background: $white;
             text-decoration: underline;
         }
     }
 
     &--plain-active {
-        background: $ship-grey;
-        color: $iron-light;
+        background: $dark-grey;
+        color: $light-grey;
         text-decoration: none;
     }
 
@@ -153,7 +153,7 @@ button {
 
     &--simple {
         padding: 10px 0 6px 0;
-        color: $matisse;
+        color: $mid-blue;
         background-color: transparent;
         text-align: left;
 
@@ -172,7 +172,7 @@ button {
     .btn {
         float: left;
         margin: 0;
-        border-right: 1px solid $iron;
+        border-right: 1px solid $mid-grey;
 
         &:last-child {
             border: none;

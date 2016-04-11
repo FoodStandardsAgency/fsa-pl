@@ -3,46 +3,46 @@
 .slate {
 
 	&--thunder {
-		background-color: $thunder;
-		color:	$iron-light;
+		background-color: $black;
+		color: $light-grey;
 	}
 
 	&--ship-grey {
-		background-color: $ship-grey;
-		color: $iron-light;
+		background-color: $dark-grey;
+		color: $light-grey;
 	}
 
 	&--abbey {
-		background-color: $abbey;
-		color:	$iron-light;
+		background-color: $dark-grey;
+		color: $light-grey;
 	}
 
 	&--silver {
-		background-color: $silver;
+		background-color: $mid-grey;
 	}
 
 	&--iron {
-		background-color: $iron;
+		background-color: $mid-grey;
 	}
 
 	&--iron-light {
-		background-color: $iron-light;
+		background-color: $light-grey;
 	}
 
 	&--mercury {
-		background-color: $mercury;
+		background-color: $light-grey;
 	}
 
 	&--gallery {
-		background-color: $gallery;
+		background-color: $white;
 	}
 
 	&--aluminium {
-		background-color: $aluminium;
+		background-color: $mid-grey;
 	}
 
 	&--alabaster {
-		background-color: $alabaster;
+		background-color: $white;
 	}
 
 }

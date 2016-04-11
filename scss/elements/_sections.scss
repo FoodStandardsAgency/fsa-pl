@@ -54,7 +54,7 @@ section {
 			position: relative;
 
 			.markdown-chart-container, .markdown-table-container {
-				border-left: solid $col $mercury;
+				border-left: solid $col $light-grey;
 				padding-left: $col;
 				margin-bottom: ($baseline * 4);
 

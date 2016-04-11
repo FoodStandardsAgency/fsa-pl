@@ -6,7 +6,7 @@ $base-font-family: Helvetica, sans-serif;
 $base-font-size: 14px;
 $base-line-height: $baseline * 3;
 $base-font-weight: 300;
-$base-text-colour: $ship-grey;
+$base-text-colour: $dark-grey;
 
 //--[vars end]--
 
@@ -98,7 +98,7 @@ cite {
 
 a {
     text-decoration: none;
-    color: $matisse;
+    color: $mid-blue;
     word-wrap: break-word;
 
     &:hover,

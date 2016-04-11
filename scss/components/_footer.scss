@@ -1,18 +1,18 @@
 //footer.scss
 
 .footer {
-	background-color: $ship-grey;
-	color: $iron-light;
+	background-color: $dark-grey;
+	color: $light-grey;
 
 	a {
-		color: $iron;
+		color: $mid-grey;
 		text-decoration: underline;
 
 		&:hover {
 			color: $white;
 		}
 		&:focus {
-			color: $ship-grey;
+			color: $dark-grey;
 			background-color: $white;
 		}
 
@@ -40,7 +40,7 @@
 	}
 
 	&-license {
-		border-top: 1px solid $silver;
+		border-top: 1px solid $mid-grey;
 		padding: $col*2 0 $col 0;
 
 			&__img {

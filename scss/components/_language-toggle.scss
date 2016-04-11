@@ -1,6 +1,6 @@
 // Language selection
 .language {
-    background: $iron-light;
+    background: $light-grey;
     font-size: 12px;
     padding: 0 8px;
 
@@ -29,11 +29,11 @@
         &__select {
             padding-bottom: 2px; // Fixes text being 1 pixel below label text
             float: right;
-            background-color: $iron-light;
+            background-color: $light-grey;
             border: 0 !important;
             font-size: 12px;
             height: 24px;
-            color: $matisse;
+            color: $mid-blue;
             font-weight: $base-font-weight;
             -webkit-appearance: none;  /*Removes default chrome and safari style*/
             -moz-appearance: none; /* Removes Default Firefox style*/
@@ -45,11 +45,11 @@
                 display: none;
             }
             &::-ms-value {
-                background-color: $iron-light;
+                background-color: $light-grey;
             }
             &:focus::-ms-value {
-                color: $matisse;
-                background-color: $iron-light;
+                color: $mid-blue;
+                background-color: $light-grey;
             }
 
             &:hover {

@@ -1,68 +1,66 @@
 //_colours.scss
 
-//Mono:
-$thunder: 		#323132;
-$ship-grey: 	#414042;
-$abbey: 		#58595B;
-$nevada:        #6D6E72; //tile hover colour
-$aluminium: 	#A6A8AB;
-$silver:        #BBBDBF; //tile hover colour
-$silver-light:  rgba(187,189,191,0.3); // tile hover colour
-$iron: 			#D0D2D3;
-$iron-light: 	#E5E6E7;
-$mercury: 		#E5E5E5;
-$gallery: 		#EAEAEA;
-$alabaster:   	#F9F9F9;
-$haze:			#F0F1F1;
+// FSA primary
+$dark-green:	#006F51;
+$mid-green:		#6CB33F;
+$light-green:	#A9C47F;
+$black:			#000000;
+$dark-grey:		#53565A;
+$mid-grey:		#97999B;
+$light-grey:	#D9D9D6;
 $white:			#FFFFFF;
-$mine-shaft:	#222222;
-$cod-gray:	    #111111;
 
-//Colours:
-$matisse: 		#206095; //links
-$blumine:       #1A4C76; //hover links
-$salem:			#0F8243; //active links
-$poppy:         #D32F2F; //errors
-$carrot:		#FF9933; //beta content
-$astral:		#3B7A9E;
-//$violet:        #5f01ae;
-$blue:          #3a7db4;
-$indigo:		#560072;
-$prim:          #E8DFF0;
+// FSA secondary
+$mid-red:		#E31837;
+$orange:		#F15D22;
+$mid-yellow:	#FDB913;
+$mid-purple:	#49176D;
+$light-purple:	#9F218B;
+$mid-blue:		#007FB2;
+
+// FSA tertiary
+$dark-red:		#B04A5A;
+$light-red:		#EF3340;
+$light-yellow:	#F1C400;
+$teal:			#00B2A9;
+$light-blue:	#8DC8E8;
+$dark-purple:	#51284F;
+
+//Font colours
+$light-text:    $white;
+$dark-text:     $dark-grey;
 
 //Colour types
-$primary:       $salem;
-$secondary:     $nevada;
+$primary:       $dark-green;
+$secondary:     $light-grey;
 //$tertiary:      ;
-$active:        $mine-shaft;
-$disabled:      $iron;
-$census:		$indigo;
-$error:         $poppy;
-
+$active:        $dark-grey;
+$disabled:      $light-grey;
+$census:		$mid-purple;
+$error:         $mid-red;
 
 $colours: (
-		//name      	//primary 		//secondary			//tertiary
-		("thunder",		$thunder, 		$iron-light,		$iron-light)
-		("ship-grey", 	$ship-grey, 	$iron-light,		$iron-light)
-		("abbey", 		$abbey, 		$iron-light,		$iron-light)
-		("nevada", 		$nevada, 		$iron-light,		$iron-light)
-		("aluminium", 	$aluminium, 	$ship-grey,			$matisse)
-		("silver", 		$silver, 		$ship-grey,			$matisse)
-		("iron", 		$iron, 			$ship-grey,			$matisse)
-		("iron-light", 	$iron-light, 	$ship-grey,			$matisse)
-		("mercury",		$mercury, 		$ship-grey,			$matisse)
-		("gallery", 	$gallery, 		$ship-grey,			$matisse)
-		("alabaster", 	$alabaster, 	$ship-grey,			$matisse)
-		("haze", 		$haze,			$ship-grey,			$matisse)
-		("white", 		$white, 		$ship-grey,			$matisse)
-		("matisse",		$matisse, 		$white)
-		("blumine", 	$blumine, 		$white)
-		("salem",		$salem, 		$white)
-		("poppy", 		$poppy, 		$white)
-		("carrot", 		$carrot, 		$ship-grey)
-		("astral", 		$astral, 		$haze)
-        ("indigo",      $indigo,        $iron-light)
-        ("prim",        $prim,        	$ship-grey)
+		//name          	//primary 		//secondary			//tertiary
+		("dark-green",		$dark-green, 	$light-text,		$light-text)
+		("mid-green",   	$mid-green,     $light-text,		$light-text)
+        ("light-green", 	$light-green, 	$light-text,		$light-text)
+		("black", 		    $black, 	    $light-text,		$light-text)
+		("dark-grey", 	    $dark-grey,     $light-text,		$light-text)
+		("mid-grey", 		$mid-grey, 		$light-text,		$light-text)
+		("light-grey",      $light-grey, 	$dark-text, 		$dark-text)
+		("white", 	        $white, 	    $dark-text, 		$dark-text)
+		("mid-red",		    $mid-red, 		$light-text,		$light-text)
+		("orange", 	        $orange, 		$light-text,		$light-text)
+		("mid-yellow", 	    $mid-yellow, 	$light-text,		$light-text)
+		("mid-purple", 	    $mid-purple,	$light-text,		$light-text)
+		("light-purple", 	$light-purple, 	$light-text,		$light-text)
+		("mid-blue",		$mid-blue, 		$light-text)
+		("dark-red", 	    $dark-red, 		$light-text)
+		("light-red",		$light-red, 	$light-text)
+		("light-yellow", 	$light-yellow, 	$light-text)
+		("teal", 		    $teal, 		    $light-text)
+		("light-blue", 	    $light-blue, 	$light-text)
+        ("dark-purple",     $dark-purple,   $light-text)
 );
 
 
@@ -72,6 +70,6 @@ $colours: (
     @return map-get($colours, $key);
   }
 
-  @warn "Unknown `#{$key}` in $colors.";
+  @warn "Unknown `#{$key}` in $colours.";
   @return null;
 }
