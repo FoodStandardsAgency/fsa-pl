@@ -1,0 +1,30 @@
+/*
+ * Variables
+ */
+
+$base-font-size: 16px;
+$base-line-height: 4px;
+// $rhythm-unit: "rem"; // Sets rhythm unit to rem. Remove to use default em unit.
+
+@include establish-baseline;
+
+html {
+  @include adjust-leading-to(6);
+}
+
+h1 {
+  @include adjust-font-size-to(36px);  //adjust-font-size-to($to-size, [$lines], [$from-size]). You have to tell compass to use the $from-size variable if the current container has a different font size than the base declared up above.
+  @include rhythm(0, 2, 1, 0, 36px);  //rhythm($leader, $padding-leader, $padding-trailer, $trailer, $font-size)
+  //margin: 0 auto rhythm(2, 36px);  //rhythm($lines, $font-size, [$offset])
+}
+
+h2 {
+  @include adjust-font-size-to(24px);
+  @include rhythm(0, 2, 1, 0, 24px);
+  //margin: 0 auto rhythm(2, 24px);
+}
+
+//footnote {
+//  @include leading-border(2px, .5);  //leading-border($width, $lines)
+//  @include trailing-border(2px, .5);  //trailing-border($width, $lines)
+//}
