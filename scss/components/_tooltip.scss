@@ -37,12 +37,12 @@
         }
 
         @include breakpoint(md) {
-            width: ($col * 12) + .0625em; // 1px makes up for border on meta item
+            width: ($col * 12) + 1px; // 1px makes up for border on meta item
             left: -118px;
         }
 
         @include breakpoint(lg) {
-            width: ($col * 15) + .0625em; // 1px makes up for border on meta item
+            width: ($col * 15) + 1px; // 1px makes up for border on meta item
             left: -119px;
         }
 

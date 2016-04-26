@@ -8,13 +8,13 @@
     position: relative;
 
     @include breakpoint(md) {
-        border-top: 1px solid $black;
-        border-bottom: 1px solid $black;
-        height: 88px;
+        //border-top: 1px solid $black;
+        //border-bottom: 1px solid $black;
+        //height: 88px;
     }
 
     @include breakpoint(lg) {
-        height: 64px;
+        //height: 64px;
     }
 
     &__list {
@@ -40,7 +40,7 @@
 
         @include breakpoint(md) {
             float: left;
-            height: 86px;
+            //height: 86px;
 
             &:nth-child(6) a {
                 border-right: 1px solid $black;
@@ -48,7 +48,7 @@
         }
 
         @include breakpoint(lg) {
-            height: 62px;
+            //height: 62px;
         }
 
         //children show on hover
@@ -59,11 +59,15 @@
                 color: $white;
                 text-decoration: none;
                 left: auto; //resets child-items to appear on-screen
-                top: 86px; //2px less to cover borders on parent
+                //top: 86px; //2px less to cover borders on parent
             }
 
             @include breakpoint(lg) {
-                top: 62px;  //2px less to cover borders on parent
+                background-color: $black;
+                color: $white;
+                text-decoration: none;
+                left: auto; //resets child-items to appear on-screen
+                //top: 62px;  //2px less to cover borders on parent
             }
         }
 
@@ -72,7 +76,13 @@
         &:focus > a,
         &--focus > a {
             @include breakpoint(md) {
-                border-left: 1px solid $black;
+                //border-left: 1px solid $black;
+                background-color: $black;
+                color: $white;
+                text-decoration: none;
+            }
+            @include breakpoint(lg) {
+                //border-left: 1px solid $black;
                 background-color: $black;
                 color: $white;
                 text-decoration: none;
@@ -90,6 +100,10 @@
                 background-color: $active;
             }
 
+            @include breakpoint(lg) {
+                background-color: $active;
+            }
+
             & > a {
                 color: $white;
             }
@@ -102,27 +116,34 @@
         text-decoration: none;
 
         @include breakpoint(sm) {
-            height: ($baseline * 6);
+            //height: ($baseline * 6);
             padding: 14px 0 10px $col;
         }
 
         @include breakpoint(md) {
             display: inline-block;
             padding: 5px $baseline*2 3px $baseline*2;
-            border-left: 1px solid $black;
-            height: 86px;
+            //border-left: 1px solid $black;
+            //height: 86px;
             font-size: 13px; // smaller font on medium for retina screens
         }
 
         @include breakpoint(lg) {
-            height: 62px;
+            //height: 62px;
             font-size: 14px;
         }
 
         //set focus styling - has to be on link to work (hover styling on li)
         &:focus {
             @include breakpoint(md) {
-                border-left: 1px solid $black;
+                //border-left: 1px solid $black;
+                background-color: $black;
+                color: $white;
+                text-decoration: none;
+            }
+
+            @include breakpoint(lg) {
+                //border-left: 1px solid $black;
                 background-color: $black;
                 color: $white;
                 text-decoration: none;
@@ -135,11 +156,14 @@
                 background-color: $black;
                 text-decoration: none;
                 left: auto; //resets child-items to appear on-screen
-                top: 86px; //2px less to cover same colour border on parent <li>
+                //top: 86px; //2px less to cover same colour border on parent <li>
             }
 
             @include breakpoint(lg) {
-                top: 62px;
+                background-color: $black;
+                text-decoration: none;
+                left: auto; //resets child-items to appear on-screen
+                //top: 62px;
             }
         }
 
