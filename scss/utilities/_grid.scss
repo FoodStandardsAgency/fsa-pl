@@ -10,7 +10,7 @@ $gutter: 40px;
 $large-complex-grid-cols: 15;
 //$medium-complex-grid-cols: 12; //9?
 
-$large: $large-complex-grid-cols * ($col + $gutter);
+$large: $large-complex-grid-cols * ($col + $gutter) -$gutter; // the last minus gutter is because the grid does not have gutters on the outside
 //$medium: $medium-complex-grid-cols * $col;
 
 //simple cols
@@ -112,7 +112,7 @@ $large-cols-four-fifths: (($large-complex-grid-cols / 5) * 4) * ($col + $gutter)
   //}
 
   @include breakpoint(lg) {
-    width: ($large);
+    width: $large + ($gutter * 2);
     margin-right: -$gutter;
     margin-left: -$gutter;
   }
