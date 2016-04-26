@@ -2,10 +2,10 @@
 
 //--[vars]--
 
-$baseline: .5em;
+$baseline: 8px;
 
-$col: 2.8125em;
-$gutter: 2.5em;
+$col: 45px;
+$gutter: 40px;
 
 $large-complex-grid-cols: 15;
 //$medium-complex-grid-cols: 12; //9?
@@ -160,8 +160,10 @@ $large-cols-four-fifths: (($large-complex-grid-cols / 5) * 4) * ($col + $gutter)
 
 .col {
   overflow: hidden;
-  margin-left: $gutter/2;
-  margin-right: $gutter/2;
+  // margin-left: $gutter/2;
+  // margin-right: $gutter/2;
+  padding-left: $gutter/2;
+  padding-right: $gutter/2;
   width: 100%;
   float: left;
 

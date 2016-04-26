@@ -167,7 +167,7 @@ strong {
         @for $i from 0 through 6 {
             //
             &--h#{$i} {
-                @extend h#{$i};
+                // @extend h#{$i};
             }
         }
     }
