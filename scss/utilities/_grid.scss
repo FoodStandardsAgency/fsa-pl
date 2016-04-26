@@ -160,8 +160,8 @@ $large-cols-four-fifths: (($large-complex-grid-cols / 5) * 4) * ($col + $gutter)
 
 .col {
   overflow: hidden;
-  margin-left: $gutter/2;
-  margin-right: $gutter/2;
+  margin-left: $gutter;
+  margin-right: $gutter;
   // padding-left: $gutter/2;
   // padding-right: $gutter/2;
   width: 100%;
