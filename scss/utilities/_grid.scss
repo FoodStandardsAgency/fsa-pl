@@ -88,7 +88,7 @@ $large-cols-four-fifths: (($large-complex-grid-cols / 5) * 4) * ($col + $gutter)
   overflow: hidden;
   width: 100%;
   margin: 0 auto;
-  padding: 0 .625em;
+  padding: 0 1px;
 
   //@include breakpoint(md) {
   //	width: ($medium);
@@ -112,8 +112,9 @@ $large-cols-four-fifths: (($large-complex-grid-cols / 5) * 4) * ($col + $gutter)
   //}
 
   @include breakpoint(lg) {
-    width: ($large + $gutter);
-    //margin-left: -$gutter;
+    width: ($large);
+    margin-right: -$gutter;
+    margin-left: -$gutter;
   }
 
 }
