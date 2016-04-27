@@ -74,7 +74,7 @@ $large-cols-four-fifths: (($large-complex-grid-cols / 5) * 4) * ($col + $gutter)
 @mixin large-cols-offset {
   @for $i from 1 through $large-complex-grid-cols {
     &--lg-offset-#{$i} {
-      margin-left: ($col + $gutter) * $i + $gutter/2;
+      margin-left: ($col + $gutter) * $i;
     }
   }
 }
