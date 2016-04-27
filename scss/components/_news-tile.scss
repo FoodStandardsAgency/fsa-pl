@@ -5,12 +5,13 @@
 		@include breakpoint(xs) {
 			position: relative;
 			overflow: visible;
-			
+
 			&:before {
 				content: "";
 				height:1px;
 				background: $light-grey;
 				position: absolute;
+				bottom: -4px;
 			}
 
 			article {
