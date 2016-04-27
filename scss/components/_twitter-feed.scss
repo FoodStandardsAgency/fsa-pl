@@ -5,6 +5,7 @@
 		@include breakpoint(lg) {
 			height: 800px;
 			position: relative;
+			overflow: visible;
 			&:before {
 				content: "";
 				width: 1px;
