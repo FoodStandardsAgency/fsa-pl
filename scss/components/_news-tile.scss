@@ -3,7 +3,9 @@
 .news-tile {
 	&--img-first {
 		@include breakpoint(xs) {
-			margin-left: 50%;
+			article {
+				margin-left: 50%;
+			}
 			img {
 				width: 45%;
 				margin-left: -45%;
