@@ -206,9 +206,9 @@ $large-cols-four-fifths: (($large-complex-grid-cols / 5) * 4) * ($col + $gutter)
   float: left;
   margin-bottom: $gutter;
 
-  @include breakpoint(xs) {
-    margin-bottom: ($gutter / 2);
-  }
+  // @include breakpoint(xs) {
+  //   margin-bottom: ($gutter / 2);
+  // }
 
   //@include breakpoint(md) {
   //	width: ($medium);
