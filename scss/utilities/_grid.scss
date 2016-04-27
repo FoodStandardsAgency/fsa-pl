@@ -133,6 +133,10 @@ $large-cols-four-fifths: (($large-complex-grid-cols / 5) * 4) * ($col + $gutter)
     padding: 0;
   }
 
+  @include breakpoint(xs) {
+    padding: 0 20px;
+  }
+
 }
 
 .col-wrap {
