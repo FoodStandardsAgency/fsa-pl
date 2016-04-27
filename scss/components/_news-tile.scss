@@ -1,18 +1,31 @@
 //_news-tile
 
 .news-tile {
+
+	@include breakpoint(xs) {
+		position: relative;
+		overflow: visible;
+
+		&:before {
+			content: "";
+			height:1px;
+			background: $light-grey;
+			position: absolute;
+			bottom: -14px;
+		}
+	}
 	&--img-first {
 		@include breakpoint(xs) {
-			position: relative;
-			overflow: visible;
+			// position: relative;
+			// overflow: visible;
 
-			&:before {
-				content: "";
-				height:1px;
-				background: $light-grey;
-				position: absolute;
-				bottom: -4px;
-			}
+			// &:before {
+			// 	content: "";
+			// 	height:1px;
+			// 	background: $light-grey;
+			// 	position: absolute;
+			// 	bottom: -14px;
+			// }
 
 			article {
 				width: 50%;
