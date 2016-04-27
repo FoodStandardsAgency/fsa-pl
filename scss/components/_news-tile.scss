@@ -12,7 +12,7 @@
 			width: 100%;
 			background: $light-grey;
 			position: absolute;
-			bottom: -14px;
+			bottom: -20px;
 		}
 	}
 	&--img-first {
@@ -20,13 +20,9 @@
 			// position: relative;
 			// overflow: visible;
 
-			// &:before {
-			// 	content: "";
-			// 	height:1px;
-			// 	background: $light-grey;
-			// 	position: absolute;
-			// 	bottom: -14px;
-			// }
+			&:before {
+				bottom: -14px;
+			}
 
 			article {
 				width: 50%;
