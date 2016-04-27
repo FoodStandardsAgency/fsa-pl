@@ -19,6 +19,18 @@
 		}
 	}
 	&--img-first {
+		@include breakpoint(lg) {
+			height: 340px;
+			padding-bottom: 40px;
+			position: relative;
+
+			footer {
+				position: absolute;
+				height: 40px;
+				overflow: hidden;
+				bottom: 0;
+			}
+		}
 		@include breakpoint(xs) {
 			// position: relative;
 			// overflow: visible;
