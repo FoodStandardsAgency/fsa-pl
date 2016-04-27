@@ -102,7 +102,7 @@ $large-cols-four-fifths: (($large-complex-grid-cols / 5) * 4) * ($col + $gutter)
   //}
 
   @include breakpoint(lg) {
-    width: ($large + $gutter);
+    width: $large;
     padding: 0;
   }
 
@@ -118,9 +118,9 @@ $large-cols-four-fifths: (($large-complex-grid-cols / 5) * 4) * ($col + $gutter)
   //}
 
   @include breakpoint(lg) {
-    width: $large + ($gutter * 2);
-    margin-right: -$gutter;
-    margin-left: -$gutter;
+    width: ($large + $gutter);
+    // margin-right: -$gutter;
+    // margin-left: -$gutter;
   }
 
 }
