@@ -33,34 +33,39 @@ $dark-text:     $dark-grey;
 //Colour types
 $primary:       $dark-green;
 $secondary:     $light-grey;
-//$tertiary:      ;
+
+//$tertiary:      
 $active:        $dark-grey;
 $disabled:      $light-grey;
 $census:		$mid-purple;
 $error:         $mid-red;
 
+//custom 
+$very-light-grey: #F2F2F2;
+
 $colours: (
-		//name          	//primary 		//secondary			//tertiary
-		("dark-green",		$dark-green, 	$light-text,		$light-text)
-		("mid-green",   	$mid-green,     $dark-text,			$dark-text)
-        ("light-green", 	$light-green, 	$dark-text,			$dark-text)
-		("black", 		    $black, 	    $light-text,		$light-text)
-		("dark-grey", 	    $dark-grey,     $light-text,		$light-text)
-		("mid-grey", 		$mid-grey, 		$dark-text,			$dark-text)
-		("light-grey",      $light-grey, 	$dark-text, 		$dark-text)
-		("white", 	        $white, 	    $dark-text, 		$dark-text)
-		("mid-red",		    $mid-red, 		$dark-text,			$dark-text)
-		("orange", 	        $orange, 		$dark-text,			$dark-text)
-		("mid-yellow", 	    $mid-yellow, 	$dark-text,			$dark-text)
-		("mid-purple", 	    $mid-purple,	$light-text,		$light-text)
-		("light-purple", 	$light-purple, 	$dark-text,			$dark-text)
-		("mid-blue",		$mid-blue, 		$dark-text,			$dark-text)
-		("dark-red", 	    $dark-red, 		$dark-text)
-		("light-red",		$light-red, 	$dark-text)
-		("light-yellow", 	$light-yellow, 	$dark-text)
-		("teal", 		    $teal, 		    $dark-text)
-		("light-blue", 	    $light-blue, 	$dark-text)
-        ("dark-purple",     $dark-purple,   $light-text)
+		//name          		//primary 			//secondary			//tertiary
+		("dark-green",			$dark-green, 		$light-text,		$light-text)
+		("mid-green",   		$mid-green,     	$dark-text,			$dark-text)
+        ("light-green", 		$light-green, 		$dark-text,			$dark-text)
+		("black", 		    	$black, 	    	$light-text,		$light-text)
+		("dark-grey", 	    	$dark-grey,     	$light-text,		$light-text)
+		("mid-grey", 			$mid-grey, 			$dark-text,			$dark-text)
+		("light-grey",      	$light-grey, 		$dark-text, 		$dark-text)
+		("white", 	        	$white, 	    	$dark-text, 		$dark-text)
+		("mid-red",		    	$mid-red, 			$dark-text,			$dark-text)
+		("orange", 	        	$orange, 			$dark-text,			$dark-text)
+		("mid-yellow", 	    	$mid-yellow, 		$dark-text,			$dark-text)
+		("mid-purple", 	    	$mid-purple,		$light-text,		$light-text)
+		("light-purple", 		$light-purple, 		$dark-text,			$dark-text)
+		("mid-blue",			$mid-blue, 			$dark-text,			$dark-text)
+		("dark-red", 	    	$dark-red, 			$dark-text)
+		("light-red",			$light-red, 		$dark-text)
+		("light-yellow", 		$light-yellow, 		$dark-text)
+		("teal", 		    	$teal, 		    	$dark-text)
+		("light-blue", 	    	$light-blue, 		$dark-text)
+        ("dark-purple",     	$dark-purple,   	$light-text)
+        ("very-light-grey", 	$very-light-grey,   $dark-text)
 );
 
 

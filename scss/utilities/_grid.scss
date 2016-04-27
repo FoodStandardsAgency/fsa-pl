@@ -10,7 +10,7 @@ $gutter: 40px;
 $large-complex-grid-cols: 15;
 //$medium-complex-grid-cols: 12; //9?
 
-$large: $large-complex-grid-cols * ($col + $gutter);
+$large: $large-complex-grid-cols * ($col + $gutter) -$gutter; // the last minus gutter is because the grid does not have gutters on the outside
 //$medium: $medium-complex-grid-cols * $col;
 
 //simple cols
@@ -52,6 +52,12 @@ $large-cols-four-fifths: (($large-complex-grid-cols / 5) * 4) * ($col + $gutter)
   @for $i from 1 through $large-complex-grid-cols {
     &--lg-#{$i} {
       width: ($col + $gutter) * $i - $gutter;
+      margin-right: $gutter;
+    }
+  }
+  @for $i from $large-complex-grid-cols through $large-complex-grid-cols { //for last col
+    &--lg-#{$i} {
+      margin-right: 0;
     }
   }
 }
@@ -88,7 +94,7 @@ $large-cols-four-fifths: (($large-complex-grid-cols / 5) * 4) * ($col + $gutter)
   overflow: hidden;
   width: 100%;
   margin: 0 auto;
-  padding: 0 .625em;
+  padding: 0 1px;
 
   //@include breakpoint(md) {
   //	width: ($medium);
@@ -113,7 +119,8 @@ $large-cols-four-fifths: (($large-complex-grid-cols / 5) * 4) * ($col + $gutter)
 
   @include breakpoint(lg) {
     width: ($large + $gutter);
-    //margin-left: -$gutter;
+    // margin-right: -$gutter;
+    // margin-left: -$gutter;
   }
 
 }
@@ -160,8 +167,10 @@ $large-cols-four-fifths: (($large-complex-grid-cols / 5) * 4) * ($col + $gutter)
 
 .col {
   overflow: hidden;
-  margin-left: $gutter/2;
-  margin-right: $gutter/2;
+  // margin-left: $gutter;
+  // margin-right: $gutter;
+  // padding-left: $gutter/2;
+  // padding-right: $gutter/2;
   width: 100%;
   float: left;
 

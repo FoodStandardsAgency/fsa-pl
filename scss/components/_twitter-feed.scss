@@ -1,0 +1,19 @@
+//_twitter-feed
+
+.twitter-feed {
+	&--news-lading {
+		@include breakpoint(lg) {
+			height: 800px;
+			position: relative;
+			overflow: visible;
+			&:before {
+				content: "";
+				width: 1px;
+				height:100%;
+				background: $light-grey;
+				position: absolute;
+				left: -19px;
+			}
+		  }
+	}
+}
