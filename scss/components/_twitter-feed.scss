@@ -1,0 +1,9 @@
+//_twitter-feed
+
+.twitter-feed {
+	&--news-lading {
+		@include breakpoint(lg) {
+			height: 800px;
+		  }
+	}
+}
