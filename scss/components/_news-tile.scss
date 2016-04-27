@@ -3,10 +3,19 @@
 .news-tile {
 	&--img-first {
 		@include breakpoint(xs) {
+			position: relative;
+			overflow: visible;
+			
+			&:before {
+				content: "";
+				height:1px;
+				background: $light-grey;
+				position: absolute;
+			}
+
 			article {
 				width: 50%;
 				margin-left: 50%;
-				border-bottom: 1px solid $light-grey;
 
 				img {
 					width: 90%;
