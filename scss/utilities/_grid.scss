@@ -9,6 +9,8 @@ $gutter: 40px;
 
 $large-complex-grid-cols: 15;
 //$medium-complex-grid-cols: 12; //9?
+//$sm-grid-cols: 9;
+$xs-grid-cols: 4;
 
 $large: $large-complex-grid-cols * ($col + $gutter) -$gutter; // the last minus gutter is because the grid does not have gutters on the outside
 //$medium: $medium-complex-grid-cols * $col;
@@ -62,6 +64,9 @@ $large-cols-four-fifths: (($large-complex-grid-cols / 5) * 4) * ($col + $gutter)
   }
 }
 
+
+
+
 //@mixin medium-cols-complex {
 //  @for $i from 1 through $medium-complex-grid-cols {
 //  &--md-#{$i} {
@@ -86,6 +91,28 @@ $large-cols-four-fifths: (($large-complex-grid-cols / 5) * 4) * ($col + $gutter)
 //   }
 //  }
 //}
+
+
+// Generate the xs columns
+@mixin make-xs-column($columns) {
+  position: relative;
+  min-height: 1px;
+  float: left;
+
+  // @media (min-width: $screen-md-min) {
+  //  float: left;
+  //  width: percentage(($columns / $grid-columns));
+  // }
+}
+
+@mixin xs-cols {
+  @for $i from 1 through $xs-grid-cols {
+    &--xs-#{$i} {
+      width: 25%;
+    }
+  }
+}
+
 
 //--[mixins end]--
 
@@ -287,7 +314,12 @@ $large-cols-four-fifths: (($large-complex-grid-cols / 5) * 4) * ($col + $gutter)
     //call complex cols last so the css gets generated last and they take precedence
     @include large-cols-complex;
     @include large-cols-offset;
+    
 
+  }
+
+  @include breakpoint(xs) {
+    @include xs-cols;
   }
 
   // &--padded { padding: $baseline $gutter; }
