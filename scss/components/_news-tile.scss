@@ -8,7 +8,8 @@
 
 		&:before {
 			content: "";
-			height:1px;
+			height: 1px;
+			width: 100%;
 			background: $light-grey;
 			position: absolute;
 			bottom: -14px;
