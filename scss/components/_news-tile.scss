@@ -4,13 +4,15 @@
 	&--img-first {
 		@include breakpoint(xs) {
 			article {
+				width: 50%;
 				margin-left: 50%;
-			}
-			img {
-				width: 45%;
-				margin-left: -45%;
-				margin-right: 5%;
-				float: left;
+
+				img {
+					width: 80%;
+					margin-left: -100%;
+					// margin-right: 5%;
+					float: left;
+				}
 			}
 		}
 	}
