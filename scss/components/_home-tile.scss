@@ -1,0 +1,145 @@
+//_news-tile
+
+.home-campaign-tile {
+  h1 a {
+    color: $dark-grey;
+  }
+
+  @include breakpoint(xs) {
+    position: relative;
+    overflow: visible;
+
+    &:before {
+      content: "";
+      height: 1px;
+      width: 100%;
+      background: $light-grey;
+      position: absolute;
+      bottom: -20px;
+    }
+  }
+  &--img-first {
+    @include breakpoint(lg) {
+      height: 330px;
+      padding-bottom: 44px;
+      position: relative;
+      overflow: visible;
+
+      &:before {
+        content: "";
+        height: 330px;
+        width: 1px;
+        background: $light-grey;
+        position: absolute;
+        right: -20px;
+      }
+
+      footer {
+        position: absolute;
+        height: 44px;
+        overflow: hidden;
+        bottom: 0;
+      }
+    }
+    @include breakpoint(xs) {
+      // position: relative;
+      // overflow: visible;
+
+      &:before {
+        content: "";
+        height:1px;
+        background: $light-grey;
+        position: absolute;
+        bottom: -14px;
+      }
+
+      article {
+        width: 50%;
+        margin-left: 50%;
+
+        img {
+          width: 90%;
+          margin-left: -100%;
+          // margin-right: 5%;
+          float: left;
+        }
+
+        h2 {
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+}
+
+.home-news-tile {
+  h1 a {
+    color: $dark-grey;
+  }
+
+  @include breakpoint(xs) {
+    position: relative;
+    overflow: visible;
+
+    &:before {
+      content: "";
+      height: 1px;
+      width: 100%;
+      background: $light-grey;
+      position: absolute;
+      bottom: -20px;
+    }
+  }
+  &--img-first {
+    @include breakpoint(lg) {
+      height: 330px;
+      padding-bottom: 44px;
+      position: relative;
+      overflow: visible;
+
+      &:before {
+        content: "";
+        height: 330px;
+        width: 1px;
+        background: $light-grey;
+        position: absolute;
+        right: -20px;
+      }
+
+      footer {
+        position: absolute;
+        height: 44px;
+        overflow: hidden;
+        bottom: 0;
+      }
+    }
+    @include breakpoint(xs) {
+      // position: relative;
+      // overflow: visible;
+
+      &:before {
+        content: "";
+        height:1px;
+        background: $light-grey;
+        position: absolute;
+        bottom: -14px;
+      }
+
+      article {
+        width: 50%;
+        margin-left: 50%;
+
+        img {
+          width: 90%;
+          margin-left: -100%;
+          // margin-right: 5%;
+          float: left;
+        }
+
+        h2 {
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+}
