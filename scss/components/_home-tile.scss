@@ -5,6 +5,10 @@
     color: $dark-grey;
   }
 
+  h2 {
+    margin-top: 16px;
+  }
+
   @include breakpoint(xs) {
     position: relative;
     overflow: visible;
@@ -21,7 +25,7 @@
   &--img-first {
     @include breakpoint(lg) {
       height: 330px;
-      padding-bottom: 44px;
+      padding-bottom: 64px;
       position: relative;
       overflow: visible;
 
@@ -36,10 +40,11 @@
 
       footer {
         position: absolute;
-        height: 44px;
+        height: 64px;
         overflow: hidden;
         bottom: 0;
       }
+
     }
     @include breakpoint(xs) {
       // position: relative;
@@ -62,10 +67,6 @@
           margin-left: -100%;
           // margin-right: 5%;
           float: left;
-        }
-
-        h2 {
-          margin-top: 16px;
         }
       }
     }
@@ -93,7 +94,7 @@
   &--img-first {
     @include breakpoint(lg) {
       height: 330px;
-      padding-bottom: 44px;
+      padding-bottom: 64px;
       position: relative;
       overflow: visible;
 
@@ -108,7 +109,7 @@
 
       footer {
         position: absolute;
-        height: 44px;
+        height: 64px;
         overflow: hidden;
         bottom: 0;
       }
@@ -134,10 +135,6 @@
           margin-left: -100%;
           // margin-right: 5%;
           float: left;
-        }
-
-        h2 {
-          margin-top: 16px;
         }
       }
     }
