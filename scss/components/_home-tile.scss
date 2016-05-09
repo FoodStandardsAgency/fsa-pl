@@ -19,28 +19,28 @@
       width: 100%;
       background: $light-grey;
       position: absolute;
-      bottom: -20px;
+      bottom: 0;
     }
   }
   &--img-first {
     @include breakpoint(lg) {
-      height: 330px;
-      padding-bottom: 44px;
+      height: 320px;
+      padding-bottom: 40px;
       position: relative;
       overflow: visible;
 
       &:before {
         content: "";
-        height: 330px;
+        height: 30px;
         width: 1px;
         background: $light-grey;
         position: absolute;
-        right: -20px;
+        right: 0;
       }
 
       footer {
         position: absolute;
-        height: 44px;
+        height: 40px;
         overflow: hidden;
         bottom: 0;
       }
@@ -88,13 +88,13 @@
       width: 100%;
       background: $light-grey;
       position: absolute;
-      bottom: -20px;
+      bottom: 0;
     }
   }
   &--img-first {
     @include breakpoint(lg) {
       height: 330px;
-      padding-bottom: 64px;
+      padding-bottom: 40px;
       position: relative;
       overflow: visible;
 
@@ -104,12 +104,12 @@
         width: 1px;
         background: $light-grey;
         position: absolute;
-        right: -20px;
+        right: 0;
       }
 
       footer {
         position: absolute;
-        height: 64px;
+        height: 40px;
         overflow: hidden;
         bottom: 0;
       }

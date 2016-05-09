@@ -1,0 +1,90 @@
+//_grid.scss
+
+//--[vars]--
+
+$col: 6.66%;
+$large-complex-grid-cols: 15;
+
+$xs-col: 25%;
+$xs-grid-cols: 4;
+
+//--[vars end]--
+
+//--[mixins]--
+
+// Breakpoint mixin in _breakpoints.scss
+
+// Generate the large columns
+@mixin make-fluid-column {
+  position: relative;
+  padding: 0 1.529412%;
+  min-height: 1px;
+  float: left;
+
+  @for $i from 1 through $large-complex-grid-cols {
+    &--fluid-#{$i} {
+      width: $col * $i;
+    }
+  }
+}
+
+@mixin make-fluid-offset {
+  @for $i from 1 through $large-complex-grid-cols {
+    &--fluid-offset-#{$i} {
+      margin-left: $col * $i;
+    }
+  }
+}
+
+// Generate the xs columns
+@mixin make-xs-column($columns) {
+  position: relative;
+  min-height: 1px;
+  float: left;
+}
+
+@mixin xs-cols {
+  @for $i from 1 through $xs-grid-cols {
+    &--xs-#{$i} {
+      width: $xs-col * $i;
+    }
+  }
+}
+
+//--[mixins end]--
+
+//--[classes]--
+.wrapper {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1275px;
+  margin: 0 auto;
+  padding: 0 1.529412%;
+
+  @include breakpoint(xs) {
+    padding: 0 20px;
+  }
+
+}
+
+.col-wrap {
+  overflow: hidden;
+  width: 100%;
+}
+
+.col {
+  overflow: hidden;
+  width: 100%;
+  float: left;
+
+  @include make-fluid-column;
+  @include make-fluid-offset;
+
+  @include breakpoint(xs) {
+    @include xs-cols;
+  }
+
+}
+
+
+//--[classes end]--
