@@ -20,24 +20,10 @@
   }
   &--img-first {
     @include breakpoint(lg) {
-      height: 300px;
+      height: 268px;
       padding-bottom: 40px;
       position: relative;
       overflow: visible;
-
-      &:before {
-        content: "";
-        height: 300px;
-        width: 1px;
-        background: $light-grey;
-        position: absolute;
-        right: 0;
-      }
-
-      &:last-of-type:before {
-        content: "";
-        width: 0;
-      }
 
       footer {
         position: absolute;
