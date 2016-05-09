@@ -36,6 +36,45 @@ $xs-grid-cols: 4;
   }
 }
 
+@mixin make-fluid-simple-col {
+
+  &--fluid-one-half {
+    width: 50%;
+  }
+
+  &--fluid-one-third {
+    width: 33.333334%;
+  }
+
+  &--fluid-two-thirds {
+    width: 66.666667%;
+  }
+
+  &--fluid-one-quarter {
+    width: 25%;
+  }
+
+  &--fluid-three-quarters {
+    width: 75%;
+  }
+
+  &--fluid-one-fifth {
+    width: 20%;
+  }
+
+  &--fluid-two-fifths {
+    width: 40%;
+  }
+
+  &--fluid-three-fifths {
+    width: 60%;
+  }
+
+  &--fluid-four-fifths {
+    width: 80%;
+  }
+}
+
 // Generate the xs columns
 @mixin make-xs-column($columns) {
   position: relative;
@@ -77,6 +116,7 @@ $xs-grid-cols: 4;
   width: 100%;
   float: left;
 
+  @include make-fluid-simple-col;
   @include make-fluid-column;
   @include make-fluid-offset;
 
@@ -85,6 +125,5 @@ $xs-grid-cols: 4;
   }
 
 }
-
 
 //--[classes end]--
