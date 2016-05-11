@@ -1,0 +1,18 @@
+.footer-tile {
+  height: 492px;
+  margin-bottom: 8px;
+}
+
+.footer-tile:before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  right: 0;
+  border-right: 2px dotted #53565A;
+}
+
+.footer-tile:last-of-type:before {
+  content: "";
+  border-right: 0;
+}
