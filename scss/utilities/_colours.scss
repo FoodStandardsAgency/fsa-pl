@@ -26,22 +26,22 @@ $teal:			#00B2A9;
 $dark-purple:	#51284F;
 $light-blue:	#8DC8E8;
 
+//custom
+$very-light-grey: #F2F2F2;
+
 //Font colours
 $light-text:    $white;
 $dark-text:     $dark-grey;
 
 //Colour types
 $primary:       $dark-green;
-$secondary:     $light-grey;
+$secondary:     $very-light-grey;
 
-//$tertiary:      
+//$tertiary:
 $active:        $dark-grey;
 $disabled:      $light-grey;
 $census:		$mid-purple;
 $error:         $mid-red;
-
-//custom 
-$very-light-grey: #F2F2F2;
 
 $colours: (
 		//name          		//primary 			//secondary			//tertiary
