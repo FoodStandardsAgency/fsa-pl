@@ -149,7 +149,7 @@
 }
 
 .pdf-separator-dotted {
-  border: 7px dotted #97999B;
+  border: 7px dotted $mid-grey;
   border-image-source: url('../../img/dots.svg');
   border-image-slice: 30%;
   border-image-repeat: round;
@@ -157,6 +157,18 @@
   border-right: 0;
   height: 86%;
   margin: 0 0 0 20px;
+  padding-top: 16px;
+}
+
+.campaign-separator-dotted {
+  border: 12px dotted $dark-purple;
+  border-image-source: url('../../img/dots_purple.svg');
+  border-image-slice: 37%;
+  border-image-repeat: round;
+  border-left: 0;
+  border-right: 0;
+  height: 86%;
+  margin: 7%;
   padding-top: 16px;
 }
 

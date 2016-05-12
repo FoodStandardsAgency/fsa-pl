@@ -1,200 +1,201 @@
 //_buttons.scss
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .btn {
-    font-family: $base-font-family;
-    font-size: 14px;
-    display: inline-block;
-    width: auto;
-    cursor: pointer;
-    padding: 6px $col 10px $col;
-    border: 0 none;
-    text-align: center;
-    -webkit-appearance: none;
-    transition: background-color 0.25s ease-out;
+  font-family: $base-font-family;
+  font-size: 18px;
+  display: inline-block;
+  width: auto;
+  cursor: pointer;
+  padding: 6px $col 10px $col;
+  border: 0 none;
+  border-radius: 10px;
+  text-align: center;
+  -webkit-appearance: none;
+  transition: background-color 0.25s ease-out;
+  text-decoration: none;
+
+  &--primary {
+    background-color: $primary;
+    color: $white;
+
+    &:hover,
+    &:focus {
+      background-color: darken($primary, 8%);
+    }
+  }
+
+  &--primary-disabled {
+    opacity: 0.7;
+
+    &:hover,
+    &:focus {
+      background-color: $primary;
+      cursor: not-allowed;
+    }
+  }
+
+  &--secondary {
+    background-color: $secondary;
+    color: $white;
+
+    &:hover,
+    &:focus {
+      background-color: $black;
+    }
+  }
+
+  &--secondary-active {
+    background-color: $active;
+
+    &:hover,
+    &:focus {
+      background-color: $active;
+      cursor: default;
+    }
+
+  }
+
+  &--secondary-disabled,
+  &--secondary-disabled:hover,
+  &--secondary-disabled:focus {
+    color: $dark-grey;
+    background: $disabled;
+    cursor: not-allowed;
+  }
+
+  &--tertiary {
+    background-color: $mid-blue;
+    color: $light-grey;
+
+    &:hover,
+    &:focus {
+      background-color: darken($mid-blue, 8%);
+    }
+  }
+
+  &--plain {
+    background-color: $white;
+    color: $mid-blue;
+    text-decoration: underline;
+
+    &:not(span):hover,
+    &:not(span):focus {
+      background: $white;
+      text-decoration: underline;
+    }
+  }
+
+  &--plain-active {
+    background: $dark-grey;
+    color: $light-grey;
     text-decoration: none;
+  }
 
-    &--primary {
-        background-color: $primary;
-        color: $white;
+  &--small {
+    font-size: 16px;
+    height: 32px;
+  }
 
-        &:hover,
-        &:focus {
-            background-color: darken($primary, 8%);
-        }
+  &--thin {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 24px; //fix for button tags
+  }
+
+  &--thick {
+    padding-top: 14px;
+    padding-bottom: 18px;
+  }
+
+  &--narrow {
+    padding-left: ($col / 2);
+    padding-right: ($col / 2);
+  }
+
+  &--wide {
+    padding-left: ($col * 2);
+    padding-right: ($col * 2);
+  }
+
+  &--full-width {
+
+    display: block;
+    width: 100%;
+  }
+
+  &--chart-control {
+    width: ($col * 4);
+    padding: 0;
+    font-size: 12px;
+    //position: relative;
+    //overflow: hidden;
+
+    @include breakpoint(lg) {
+      width: ($col * 6);
     }
 
-    &--primary-disabled {
-        opacity: 0.7;
-
-        &:hover,
-        &:focus {
-            background-color: $primary;
-            cursor: not-allowed;
-        }
+    &--all {
+      width: ($col * 5);
     }
 
-    &--secondary {
-        background-color: $secondary;
-        color: $white;
-
-        &:hover,
-        &:focus {
-            background-color: $black;
-        }
+    &--download {
+      width: ($col * 11)
     }
 
-    &--secondary-active {
-        background-color: $active;
+  }
 
-        &:hover,
-        &:focus {
-            background-color: $active;
-            cursor: default;
-        }
+  &--block {
+    display: block;
+  }
 
+  &--simple {
+    padding: 10px 0 6px 0;
+    color: $mid-blue;
+    background-color: transparent;
+    text-align: left;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
     }
 
-    &--secondary-disabled,
-    &--secondary-disabled:hover,
-    &--secondary-disabled:focus {
-        color: $dark-grey;
-        background: $disabled;
-        cursor: not-allowed;
-    }
-
-    &--tertiary {
-        background-color: $mid-blue;
-        color: $light-grey;
-
-        &:hover,
-        &:focus {
-            background-color: darken($mid-blue, 8%);
-        }
-    }
-
-    &--plain {
-        background-color: $white;
-        color: $mid-blue;
-        text-decoration: underline;
-
-        &:not(span):hover,
-        &:not(span):focus {
-            background: $white;
-            text-decoration: underline;
-        }
-    }
-
-    &--plain-active {
-        background: $dark-grey;
-        color: $light-grey;
-        text-decoration: none;
-    }
-
-    &--small {
-        font-size: 12px;
-        height: 32px;
-    }
-
-    &--thin {
-        padding-top: 0;
-        padding-bottom: 0;
-        height: 24px; //fix for button tags
-    }
-
-    &--thick {
-        padding-top: 14px;
-        padding-bottom: 18px;
-    }
-
-    &--narrow {
-        padding-left: ($col / 2);
-        padding-right: ($col / 2);
-    }
-
-    &--wide {
-        padding-left: ($col * 2);
-        padding-right: ($col * 2);
-    }
-
-    &--full-width {
-
-        display: block;
-        width: 100%;
-    }
-
-    &--chart-control {
-        width: ($col * 4);
-        padding: 0;
-        font-size: 12px;
-        //position: relative;
-        //overflow: hidden;
-
-        @include breakpoint(lg) {
-            width: ($col * 6);
-        }
-
-        &--all {
-            width: ($col * 5);
-        }
-
-        &--download {
-            width: ($col * 11)
-        }
-
-    }
-
-    &--block {
-        display: block;
-    }
-
-    &--simple {
-        padding: 10px 0 6px 0;
-        color: $mid-blue;
-        background-color: transparent;
-        text-align: left;
-
-        &:hover,
-        &:focus {
-            text-decoration: underline;
-        }
-
-    }
+  }
 
 }
 
 .btn-group {
-    overflow: auto;
+  overflow: auto;
 
-    .btn {
-        float: left;
-        margin: 0;
-        border-right: 1px solid $mid-grey;
+  .btn {
+    float: left;
+    margin: 0;
+    border-right: 1px solid $mid-grey;
 
-        &:last-child {
-            border: none;
-        }
-
+    &:last-child {
+      border: none;
     }
 
+  }
+
+  legend {
+    padding: 6px 0 10px 0;
+  }
+
+  input {
+    //display: none; //breaks keyboard tabbing/focus
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    left: -100px;
+  }
+
+  &--active {
     legend {
-        padding: 6px 0 10px 0;
+      text-decoration: underline;
     }
-
-    input {
-        //display: none; //breaks keyboard tabbing/focus
-        height: 0px;
-        width: 0px;
-        position: absolute;
-        left: -100px;
-    }
-
-    &--active {
-        legend {
-            text-decoration: underline;
-        }
-    }
+  }
 }
