@@ -84,7 +84,6 @@
       position: relative;
       overflow: visible;
 
-
       footer {
         position: absolute;
         height: 40px;
@@ -161,25 +160,22 @@
   padding-top: 16px;
 }
 
-blockquote.style-pdf {
-  padding-left: 70px;
+.style-pdf {
+  padding-left: 80px;
   margin: 0;
   height: 104px;
   background-image: url('../../img/pdf.png');
   background-repeat: no-repeat;
   background-size: 90px;
-  text-indent: 30px;
-}
-
-blockquote.style-pdf div {
-  padding-left: 40px;
-  display: block;
+  & div {
+    display: block;
+  }
 }
 
 .img-responsive {
   width: 100%;
   height: auto;
-  float: left;  //added for news
+  float: left; //added for news
 }
 
 .jumbotron {

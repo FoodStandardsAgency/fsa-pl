@@ -3,7 +3,7 @@
 //--[vars]--
 //$base-font-family: 'Open Sans', sans-serif;
 $base-font-family: "Roboto", Arial, sans-serif;
-$base-font-size: 16px;
+$base-font-size: 18px;
 $base-line-height: $baseline * 3;
 $base-font-weight: 400;
 $base-text-colour: $dark-grey;
@@ -21,9 +21,9 @@ body {
 }
 
 h1 {
-    font-size: 35px;
-    font-weight: $base-font-weight;
-    line-height: 48px;
+    font-size: 60px;
+    font-weight: $base-font-weight-bold;
+    line-height: 68px;
     margin: ($baseline * 6) 0;
     padding: 2px 0 6px 0;
 
@@ -36,23 +36,23 @@ h1 {
 }
 
 h2 {
-    font-size: 24px;
-    font-weight: $base-font-weight;
-    line-height: 24px;
+    font-size: 42px;
+    font-weight: $base-font-weight-bold;
+    line-height: 48px;
     margin: ($baseline * 5) 0 0 0;
     padding: 3px 0 5px 0;
 }
 
 h3 {
     font-size: 21px;
-    font-weight: $base-font-weight;
+    font-weight: $base-font-weight-bold;
     line-height: 24px;
     margin: ($baseline * 2) 0 0 0;
     padding: 3px 0 5px 0;
 }
 
 h4 {
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 24px;
     margin: ($baseline * 2) 0;
@@ -72,7 +72,7 @@ h6 {
 }
 
 p {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: $base-font-weight;
     line-height: 24px;
     margin: ($baseline * 2) 0;
@@ -85,7 +85,7 @@ ul, ol {
 }
 
 li {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: $base-font-weight;
     line-height: 24px;
     margin: ($baseline * 2) 0;

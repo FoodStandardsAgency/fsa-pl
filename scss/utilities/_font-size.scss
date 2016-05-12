@@ -27,27 +27,38 @@
 //
 //@include font-size-util;
 
+$base-font-weight-bold: 700;
 
 .font-size {
-    &--0 {
-        font-size: 0 !important;
-    }
-    &--14 {
-        font-size: 14px !important;
-    }
-    &--16 {
-        font-size: 16px !important;
-    }
-    &--17 {
-        font-size: 17px !important;
-    }
-    &--21 {
-        font-size: 21px !important;
-    }
-    &--24 {
-        font-size: 24px !important;
-    }
-    &--36 {
-        font-size: 36px !important;
-    }
+  &--0 {
+    font-size: 0 !important;
+  }
+  &--h6 {
+    font-size: 14px !important;
+    font-weight: $base-font-weight-bold;
+  }
+  &--h5 {
+    font-size: 16px !important;
+    font-weight: $base-font-weight-bold;
+  }
+  &--h4 {
+    font-size: 18px !important;
+    font-weight: $base-font-weight-bold;
+    line-height: 24px;
+  }
+  &--h3 {
+    font-size: 21px !important;
+    font-weight: $base-font-weight-bold;
+    line-height: 24px;
+  }
+  &--h2 {
+    font-size: 42px !important;
+    font-weight: $base-font-weight-bold;
+    line-height: 48px;
+  }
+  &--h1 {
+    font-size: 60px !important;
+    font-weight: $base-font-weight-bold;
+    line-height: 68px;
+  }
 }
