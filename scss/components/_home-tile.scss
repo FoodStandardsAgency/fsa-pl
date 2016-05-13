@@ -191,6 +191,19 @@
 }
 
 .jumbotron {
-  max-width: 1275px;
-  margin: 0 auto;
+  height: 450px;
+  background: url('../../img/fsa-home-main.png') no-repeat;
+  position: relative;
+  & .col-wrap {
+    position: absolute;
+    bottom: 0;
+  }
+  & h2 {
+    text-align: center;
+    color: #51284F;
+  }
+  & button {
+    color:#FFF;
+    margin: 0 32%;
+  }
 }
