@@ -207,3 +207,11 @@
     margin: 0 32%;
   }
 }
+
+.active {
+  border-bottom: 15px solid #53565A !important;
+}
+
+.inactive {
+  border-bottom: 15px solid #F2F2F2;
+}
