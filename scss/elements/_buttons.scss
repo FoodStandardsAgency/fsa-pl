@@ -38,61 +38,44 @@ button {
     }
   }
 
-  &--secondary {
-    background-color: $secondary;
+  &--action {
+    background-color: $light-purple;
     color: $white;
 
     &:hover,
     &:focus {
-      background-color: $black;
+      background-color: darken($light-purple, 8%);
     }
   }
 
-  &--secondary-active {
-    background-color: $active;
+  //&--action-active {
+  //  background-color: $active;
+  //
+  //  &:hover,
+  //  &:focus {
+  //    background-color: $active;
+  //    cursor: default;
+  //  }
+  //}
+
+  &--action-alt {
+    background-color: $dark-purple;
+    color: $white;
 
     &:hover,
     &:focus {
-      background-color: $active;
-      cursor: default;
+      background-color: darken($dark-purple, 8%);
     }
-
   }
 
-  &--secondary-disabled,
-  &--secondary-disabled:hover,
-  &--secondary-disabled:focus {
-    color: $dark-grey;
-    background: $disabled;
-    cursor: not-allowed;
-  }
-
-  &--tertiary {
-    background-color: $mid-blue;
-    color: $light-grey;
+  &--content {
+    background-color: $orange;
+    color: $white;
 
     &:hover,
     &:focus {
-      background-color: darken($mid-blue, 8%);
+      background-color: darken($orange, 8%);
     }
-  }
-
-  &--plain {
-    background-color: $white;
-    color: $mid-blue;
-    text-decoration: underline;
-
-    &:not(span):hover,
-    &:not(span):focus {
-      background: $white;
-      text-decoration: underline;
-    }
-  }
-
-  &--plain-active {
-    background: $dark-grey;
-    color: $light-grey;
-    text-decoration: none;
   }
 
   &--small {
@@ -125,27 +108,6 @@ button {
 
     display: block;
     width: 100%;
-  }
-
-  &--chart-control {
-    width: ($col * 4);
-    padding: 0;
-    font-size: 12px;
-    //position: relative;
-    //overflow: hidden;
-
-    @include breakpoint(lg) {
-      width: ($col * 6);
-    }
-
-    &--all {
-      width: ($col * 5);
-    }
-
-    &--download {
-      width: ($col * 11)
-    }
-
   }
 
   &--block {

@@ -1,72 +1,115 @@
-// _tabs.scss
+//_tabs.scss
 
-.tab {
+.nav {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  display: inline-block;
+}
 
-    //@include breakpoint(md){
-	//	margin-top: ($baseline *6);
-	//}
+.nav-tabs {
+  margin-top: 4px;
 
-    //border-bottom: 1px solid $iron;
-    //margin-bottom: -1px;
-    //background: $ship-grey;
+  > li {
+    float: left;
+    margin: 0px 16px 0 0;
+    padding-left: 0px;
 
-    &__item {
-        margin: 0;
-        vertical-align: bottom;
-        display: inline-block;
-
-        @include breakpoint(sm) {
-            max-width: 32%;
-        }
+    > a {
+      margin-right: 2px;
+      background-color: #53565A;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-bottom: 0px solid white;
     }
 
-    &__link {
-
-        font-size: 21px;
-        height: ($baseline * 6);
-        background: $mid-grey;
-        color: $dark-grey;
-        padding: 12px $col;
-        margin: 0;
-        display: block;
-
-        @include breakpoint(sm) {
-            padding: 9px ($col/2) 3px ($col/2);
-            font-size: 14px;
-            word-wrap: normal;
-            line-height: 18px;
-            height: ($baseline * 7);
-        }
-
-        &:hover,
-        &:focus {
-            cursor: pointer;
-            background: darken($mid-grey, 15%);
-        }
-
-        &--active {
-            padding-top: 20px;
-            padding-bottom: 12px;
-            background: $white;
-            color: $dark-grey;
-            height: ($baseline * 7);
-
-            @include breakpoint(sm) {
-                padding-top: 17px;
-                height: ($baseline * 8);
-            }
-
-            &:hover,
-            &:focus {
-                cursor: default;
-                background-color: $white;
-            }
-
-
-        }
-
-
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: #53565A;
+        background-color: #F2F2F2;
+        padding: 12px 32px 20px 32px;
+        cursor: default;
+      }
     }
+  }
+
+  &.nav-justified {
+    width: 100%;
+    border-bottom: 0;
+
+    > li {
+      float: none;
+
+      > a {
+        text-align: center;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+}
 
 
+
+
+//.nav-tabs.nav-justified > .dropdown .dropdown-menu {
+//  top: auto;
+//  left: auto;
+//}
+//
+//@media (min-width: 768px) {
+//  .nav-tabs.nav-justified > li {
+//    display: table-cell;
+//    width: 1%;
+//  }
+//
+//  .nav-tabs.nav-justified > li > a {
+//    margin-bottom: 0;
+//  }
+//}
+//
+//.nav-tabs.nav-justified > li > a {
+//  margin-right: 0;
+//  border-radius: 4px;
+//}
+//
+//.nav-tabs.nav-justified > .active > a,
+//.nav-tabs.nav-justified > .active > a:hover,
+//.nav-tabs.nav-justified > .active > a:focus {
+//  border: 1px solid #97999B;
+//}
+//
+//@media (min-width: 768px) {
+//  .nav-tabs.nav-justified > li > a {
+//    border-bottom: 1px solid #97999B;
+//    border-radius: 4px 4px 0 0;
+//  }
+//
+//  .nav-tabs.nav-justified > .active > a,
+//  .nav-tabs.nav-justified > .active > a:hover,
+//  .nav-tabs.nav-justified > .active > a:focus {
+//    border-bottom-color: #ffffff;
+//  }
+//}
+
+.tab-content {
+  background-color: #F2F2F2;
+  border-left: 4px solid #FDB913;
+  border-right: 4px solid #FDB913;
+
+  & p {
+    margin: 0;
+    padding-left: 12px;
+  }
+
+  > .tab-pane {
+    display: none;
+  }
+
+  > .active {
+    display: block;
+  }
 }

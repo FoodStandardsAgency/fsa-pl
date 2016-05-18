@@ -1,6 +1,16 @@
+//_footer-tile.scss
+
 .footer-tile {
-  height: 492px;
+  height: 580px;
   margin-bottom: 8px;
+
+  > h5 {
+    color: $orange;
+  }
+
+  > ul {
+    padding-left: 0;
+  }
 }
 
 .footer-tile:before {

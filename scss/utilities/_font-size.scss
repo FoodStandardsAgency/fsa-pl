@@ -1,64 +1,63 @@
-//$font-sizes: (
-//    14: 14px,
-//    16: 16px,
-//    17: 17px,
-//    21: 21px,
-//    24: 24px,
-//    35: 35px
-//);
-//
-//@function font-size($key) {
-//    @if map_has_key($font-sizes, $key) {
-//        @return map_get($font-sizes, $key)
-//    }
-//    @warn "Unknown `#{$key}` in $font-sizes.";
-//    @return null;
-//}
-//
-//@mixin font-size-util {
-//    .font-size {
-//        @each $font-size, $font-size-px in $font-sizes {
-//            &--#{$font-size} {
-//                font-size: $font-size-px;
-//            }
-//        }
-//    }
-//}
-//
-//@include font-size-util;
+//_font-size.scss
+
+//--[vars]--
+$base-font-family: "Roboto", Arial, sans-serif;
+$title-font-family: "oscine", sans-serif;
+$base-font-size: 18px;
+$base-line-height: $baseline * 3;
+$base-font-weight: 400;
+$base-text-colour: $dark-grey;
 
 $base-font-weight-bold: 700;
+$base-font-weight-regular: 300;
+$base-font-weight-thin: 100;
 
 .font-size {
   &--0 {
     font-size: 0 !important;
   }
   &--h6 {
-    font-size: 14px !important;
+    font-size: 18px !important;
     font-weight: $base-font-weight-bold;
   }
   &--h5 {
-    font-size: 16px !important;
+    font-size: 21px !important;
     font-weight: $base-font-weight-bold;
   }
   &--h4 {
-    font-size: 18px !important;
+    font-size: 24px !important;
     font-weight: $base-font-weight-bold;
     line-height: 24px;
   }
   &--h3 {
-    font-size: 21px !important;
+    font-size: 28px !important;
     font-weight: $base-font-weight-bold;
-    line-height: 24px;
+    line-height: 28px;
   }
   &--h2 {
-    font-size: 42px !important;
+    font-size: 48px !important;
     font-weight: $base-font-weight-bold;
     line-height: 48px;
   }
   &--h1 {
     font-size: 60px !important;
     font-weight: $base-font-weight-bold;
-    line-height: 68px;
+    line-height: 60px;
+  }
+  &--standout {
+    font-size: 28px !important;
+    font-weight: $base-font-weight-regular;
+    line-height: 32px;
+  }
+  &--quote {
+    font-size: 48px !important;
+    font-weight: $base-font-weight-thin;
+    font-style: italic;
+    line-height: 56px;
+  }
+  &--small {
+    font-size: 16px !important;
+    font-weight: $base-font-weight-regular;
+    line-height: 24px;
   }
 }

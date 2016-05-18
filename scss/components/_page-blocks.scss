@@ -1,0 +1,239 @@
+//_page-blocks.scss
+
+.home {
+  // campaign tiles
+  &--campaign {
+    background-color: $very-light-grey;
+
+    @include breakpoint(xs) {
+      background-color: $white;
+    }
+
+    > .col-wrap {
+      background-color: $white;
+    }
+  }
+
+  // news tiles
+  &--news {
+    background-color: $dark-grey;
+
+    @include breakpoint(xs) {
+      background-color: $white;
+    }
+
+    > .col-wrap {
+      background-color: $white;
+    }
+  }
+}
+
+// News
+.news {
+  &--border {
+    background-color: $very-light-grey;
+
+    @include breakpoint(xs) {
+      background-color: $white;
+    }
+  }
+
+  &--background {
+    background-color: $white;
+  }
+}
+
+// Content news
+.content {
+
+  background-color: $very-light-grey;
+
+  @include breakpoint(xs) {
+    background-color: $white;
+  }
+
+  > .col-wrap {
+    background-color: $white;
+  }
+
+  &--title {
+    background-color: $light-purple;
+
+    & h2 {
+      color: $black;
+    }
+
+    @include breakpoint(xs) {
+      background-color: $white;
+    }
+
+    > .col-wrap {
+      background-color: $white;
+    }
+  }
+
+  &--explanation {
+    background-color: $mid-purple;
+
+    @include breakpoint(xs) {
+      background-color: $white;
+    }
+
+    > .col-wrap {
+      background-color: $light-grey;
+    }
+
+    & p {
+      font-size: 28px !important;
+      font-weight: $base-font-weight-regular;
+      line-height: 32px;
+    }
+  }
+
+  &--intro {
+    background-color: $light-purple;
+
+    @include breakpoint(xs) {
+      background-color: $white;
+    }
+
+    > .col-wrap {
+      background-color: $white;
+
+      > .wrapper > .col {
+        padding: .6%;
+      }
+    }
+  }
+
+
+  &--tile-signup {
+    background-color: #F2F2F2;
+    padding: 12px;
+
+    p {
+      font-size: 16px !important;
+      font-weight: $base-font-weight-regular;
+      line-height: 24px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .bold {
+      font-weight: 700;
+    }
+
+    .share {
+      border-top: 1px solid #97999B;
+      border-bottom: 1px solid #97999B;
+      margin: 16px 0;
+      padding: 16px 0;
+    }
+  }
+
+  &--quote {
+    background-color: $mid-yellow;
+
+    @include breakpoint(xs) {
+      background-color: $white;
+    }
+
+    > .col-wrap {
+      background-color: $very-light-grey;
+    }
+
+    & p {
+      font-size: 48px !important;
+      font-weight: $base-font-weight-thin;
+      font-style: italic;
+      line-height: 56px;
+    }
+  }
+
+  &--related {
+    background-color: $black;
+
+    & h2 {
+      color: $black;
+    }
+
+    @include breakpoint(xs) {
+      background-color: $white;
+    }
+
+    > .col-wrap {
+      background-color: $very-light-grey;
+    }
+  }
+
+  &--other-related {
+    background-color: $dark-grey;
+
+    & h2 {
+      color: $black;
+    }
+
+    @include breakpoint(xs) {
+      background-color: $white;
+    }
+
+    > .col-wrap {
+      background-color: $light-grey;
+    }
+  }
+}
+
+// Footer
+
+.footer {
+
+  background-color: $very-light-grey;
+
+  @include breakpoint(xs) {
+    background-color: $white;
+  }
+
+  > .col-wrap {
+    background-color: $white;
+  }
+
+  &--menu {
+    background-color: $light-grey;
+
+    @include breakpoint(xs) {
+      background-color: $white;
+    }
+
+    > .col-wrap {
+      background-color: $very-light-grey;
+    }
+  }
+}
+
+.sign-and-subscribe {
+  background-color: $very-light-grey;
+  padding: 16px;
+  margin-bottom: 40px;
+
+  & h5 {
+    margin: 8px 0;
+  }
+
+  & .col {
+    padding: 0;
+  }
+
+  & input {
+    display: inline;
+    width: 100%;
+    padding: 10px;
+    height: 54px;
+    margin: 0;
+    font-size: 18px;
+    border: 0;
+  }
+
+  & .btn {
+    width: 100%;
+  }
+}

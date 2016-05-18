@@ -1,176 +1,167 @@
 //_type.scss
 
-//--[vars]--
-//$base-font-family: 'Open Sans', sans-serif;
-$base-font-family: "Roboto", Arial, sans-serif;
-$base-font-size: 18px;
-$base-line-height: $baseline * 3;
-$base-font-weight: 400;
-$base-text-colour: $dark-grey;
-
-//--[vars end]--
 
 body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    font-weight: $base-font-weight;
-    line-height: $base-line-height;
-    color: $base-text-colour;
-    //-webkit-font-smoothing: antialiased;
-    //-moz-osx-font-smoothing: grayscale;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+  color: $base-text-colour;
+  //-webkit-font-smoothing: antialiased;
+  //-moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
-    font-size: 60px;
-    font-weight: $base-font-weight-bold;
-    line-height: 68px;
-    margin: ($baseline * 6) 0;
-    padding: 2px 0 6px 0;
-
-    // Alternative H1 for census landing page
-    &--census {
-        color: $census;
-        font-weight: 600;
-    }
-
+  font-size: 60px;
+  font-family: $title-font-family;
+  font-weight: $base-font-weight-bold;
+  line-height: 60px;
+  margin: ($baseline * 6) 0;
+  padding: 2px 0 6px 0;
 }
 
 h2 {
-    font-size: 42px;
-    font-weight: $base-font-weight-bold;
-    line-height: 48px;
-    margin: ($baseline * 5) 0 0 0;
-    padding: 3px 0 5px 0;
+  font-size: 48px;
+  font-family: $title-font-family;
+  font-weight: $base-font-weight-bold;
+  line-height: 48px;
+  margin: ($baseline * 5) 0 0 0;
+  padding: 3px 0 5px 0;
 }
 
 h3 {
-    font-size: 21px;
-    font-weight: $base-font-weight-bold;
-    line-height: 24px;
-    margin: ($baseline * 2) 0 0 0;
-    padding: 3px 0 5px 0;
+  font-size: 36px;
+  font-family: $title-font-family;
+  font-weight: $base-font-weight-bold;
+  line-height: 36px;
+  margin: ($baseline * 2) 0 0 0;
+  padding: 3px 0 5px 0;
 }
 
 h4 {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
-    margin: ($baseline * 2) 0;
-    padding: 5px 0 3px 0;
+  font-size: 28px;
+  font-family: $title-font-family;
+  font-weight: $base-font-weight-bold;
+  line-height: 28px;
+  margin: ($baseline * 2) 0;
+  padding: 5px 0 3px 0;
 }
 
 h5 {
-    font-size: 16px;
-    font-weight: 600;
-    margin: ($baseline * 2) 0;
+  font-size: 21px;
+  font-family: $title-font-family;
+  font-weight: $base-font-weight-bold;
+  line-height: 21px;
+  margin: ($baseline * 2) 0;
 }
 
 h6 {
-    font-size: 14px;
-    font-weight: 600;
-    margin: ($baseline * 2) 0 0 0;
+  font-size: 18px;
+  font-family: $base-font-family;
+  font-weight: $base-font-weight-bold;
+  line-height: 18px;
+  margin: ($baseline * 2) 0 0 0;
 }
 
 p {
-    font-size: 18px;
-    font-weight: $base-font-weight;
-    line-height: 24px;
-    margin: ($baseline * 2) 0;
-    padding: 6px 0 10px 0;
+  font-size: 18px;
+  font-weight: $base-font-weight-regular;
+  line-height: 28px;
+  margin: ($baseline * 2) 0;
+  padding: 6px 0 10px 0;
 }
 
 ul, ol {
-    margin: ($baseline * 2) 0;
-    padding-left: ($col * 1);
+  margin: ($baseline * 2) 0;
+  padding-left: ($col * 1);
 }
 
 li {
-    font-size: 16px;
-    font-weight: $base-font-weight;
-    line-height: 24px;
-    margin: ($baseline * 2) 0;
-    padding: 6px 0 10px 16px;
+  font-size: 18px;
+  font-weight: $base-font-weight-regular;
+  line-height: 28px;
+  margin: ($baseline * 2) 0;
+  padding: 6px 0 10px 20px;
 }
 
 cite {
-    //
+  //
 }
 
 a {
-    text-decoration: none;
-    color: $orange;
-    word-wrap: break-word;
+  text-decoration: none;
+  color: $orange;
+  word-wrap: break-word;
 
-    &:hover,
-    &:focus {
-        text-decoration: underline;
-    }
+  &:hover,
+  &:focus {
+    border-bottom: 1px dotted $orange;
+  }
 }
 
 address {
-    font-style: normal;
+  font-style: normal;
 }
 
 strong {
-    font-weight: 600;
+  font-weight: $base-font-weight-bold;
 }
 
 // Mixin for silent styling to bunch up spacing between elements in big blocks of text (ie markdown)
 @mixin markdown {
-    overflow: visible;
+  overflow: visible;
 
-    h4 {
-        font-weight: 600;
+  h4 {
+    font-weight: $base-font-weight-bold;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  ul {
+    margin-top: 0;
+  }
+
+  img {
+    max-width: ($col * 38);
+  }
+
+  li {
+    margin: 0;
+
+    // li with only one p shouldn't have padding (spacing looks excessive)
+    p:first-of-type {
+      margin: 0;
+      padding: 0;
     }
 
-    a {
-        text-decoration: underline;
+    // to offset above styling second p in an li should have extra margin on the top (giving it the same styling as an ordinary p)
+    p:nth-of-type(2) {
+      @extend p;
+      margin-top: ($baseline * 2);
     }
 
-
-    p {
-        margin-top: 0;
-    }
-
-    ul {
-        margin-top: 0;
-    }
-
-    img {
-        max-width: ($col * 38);
-    }
-
-    li {
-        margin: 0;
-
-        // li with only one p shouldn't have padding (spacing looks excessive)
-        p:first-of-type {
-            margin: 0;
-            padding: 0;
-        }
-
-        // to offset above styling second p in an li should have extra margin on the top (giving it the same styling as an ordinary p)
-        p:nth-of-type(2) {
-            @extend p;
-            margin-top: ($baseline * 2);
-        }
-
-    }
+  }
 }
 
 .markdown {
-    @include markdown
+  @include markdown
 }
 
 @mixin font-heading-util {
-    .font-size {
-        @for $i from 0 through 6 {
-            //
-            &--h#{$i} {
-                // @extend h#{$i};
-            }
-        }
+  .font-size {
+    @for $i from 0 through 6 {
+      //
+      &--h#{$i} {
+        // @extend h#{$i};
+      }
     }
+  }
 }
 
 @include font-heading-util;
