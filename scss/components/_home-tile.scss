@@ -24,7 +24,7 @@
   }
   &--img-first {
     @include breakpoint(lg) {
-      height: 308px;
+      height: 340px;
       padding-bottom: 40px;
       position: relative;
       overflow: visible;
@@ -81,7 +81,7 @@
   }
   &--img-first {
     @include breakpoint(lg) {
-      height: 330px;
+      height: 360px;
       padding-bottom: 40px;
       position: relative;
       overflow: visible;
