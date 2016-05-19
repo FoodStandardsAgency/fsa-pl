@@ -37,7 +37,6 @@
   }
 }
 
-
 //&.nav-justified {
 //  width: 100%;
 //  border-bottom: 0;
@@ -93,7 +92,6 @@
 
 .tab-content {
   background-color: #F2F2F2;
-  border-left: 4px solid #FDB913;
   border-right: 4px solid #FDB913;
 
   & p {
@@ -107,5 +105,9 @@
 
   > .active {
     display: block;
+
+    &:first-child {
+      border-left: 4px solid #FDB913;
+    }
   }
 }

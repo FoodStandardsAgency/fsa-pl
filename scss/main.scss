@@ -59,7 +59,7 @@ $old-ie: false;
  @import "components/table";
  @import "components/table-of-contents";
 // @import "components/show-and-hide";
-// @import "components/side-bar";
+ @import "components/side-bar";
 // @import "components/date-picker";
 // @import "components/time-series-tool";
 // @import "components/search-bar";
@@ -74,5 +74,6 @@ $old-ie: false;
 @import "components/home-tile";
 @import "components/footer-tile";
 @import "components/pagination";
+@import "components/menu";
 
 @import "shame";

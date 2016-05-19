@@ -10,7 +10,7 @@ button {
   display: inline-block;
   width: auto;
   cursor: pointer;
-  padding: 6px $col 10px $col;
+  padding: 14px $col 18px $col;
   border: 0 none;
   border-radius: 10px;
   text-align: center;
@@ -81,17 +81,18 @@ button {
   &--small {
     font-size: 16px;
     height: 32px;
+    padding-top: 6px;
   }
 
-  &--thin {
+  &--thinner {
     padding-top: 0;
     padding-bottom: 0;
     height: 24px; //fix for button tags
   }
 
-  &--thick {
-    padding-top: 14px;
-    padding-bottom: 18px;
+  &--thin {
+    padding-top: 6px;
+    padding-bottom: 10px;
   }
 
   &--narrow {

@@ -6,7 +6,7 @@ $title-font-family: "oscine", sans-serif;
 $base-font-size: 18px;
 $base-line-height: $baseline * 3;
 $base-font-weight: 400;
-$base-text-colour: $dark-grey;
+$base-text-colour: $text;
 
 $base-font-weight-bold: 700;
 $base-font-weight-regular: 300;
@@ -35,14 +35,14 @@ $base-font-weight-thin: 100;
     line-height: 28px;
   }
   &--h2 {
+    font-size: 36px !important;
+    font-weight: $base-font-weight-bold;
+    line-height: 36px;
+  }
+  &--h1 {
     font-size: 48px !important;
     font-weight: $base-font-weight-bold;
     line-height: 48px;
-  }
-  &--h1 {
-    font-size: 60px !important;
-    font-weight: $base-font-weight-bold;
-    line-height: 60px;
   }
   &--standout {
     font-size: 28px !important;

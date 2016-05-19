@@ -17,7 +17,7 @@
     color: $dark-grey;
     text-decoration: none;
     padding: 9px 18px;
-    margin-right: 12px;
+    margin: 0 6px;
     border-radius: 50%;
     background: $very-light-grey;
   }
@@ -31,20 +31,20 @@
     padding: 0;
     margin: 9px 18px;
     background: $white;
-    color: $orange;
+    color: $orange-accessible;
     border-radius: 0%;
     font-weight: 300;
   }
 
   > li a.nude:hover {
-    border-bottom: 1px dotted $orange;
+    border-bottom: 1px dotted $orange-accessible;
   }
 
   > li.current {
     display: block;
     float: left;
     padding: 9px 18px;
-    margin-right: 12px;
+    margin: 0 6px;
     border-radius: 50%;
     color: $white;
     background: $dark-grey;

@@ -143,10 +143,17 @@
     }
 
     & p {
-      font-size: 48px !important;
+      font-size: 48px;
       font-weight: $base-font-weight-thin;
       font-style: italic;
       line-height: 56px;
+
+      &.source {
+        font-size: 16px;
+        font-family: "Roboto", Arial, sans-serif;
+        font-style: normal;
+        float: right;
+      }
     }
   }
 
@@ -236,4 +243,31 @@
   & .btn {
     width: 100%;
   }
+}
+
+.key-facts {
+  background-color: $mid-yellow;
+
+  @include breakpoint(xs) {
+    background-color: $white;
+  }
+
+  > .col-wrap {
+    background-color: $very-light-grey;
+  }
+
+  & p.title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: $base-font-weight-thin;
+    font-style: italic;
+    line-height: 48px;
+  }
+
+  & p.share {
+    font-size: 24px;
+    font-weight: $base-font-weight-regular;
+    line-height: 24px;
+  }
+
 }
