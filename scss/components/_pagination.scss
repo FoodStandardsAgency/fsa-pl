@@ -1,0 +1,52 @@
+//_pagination.scss
+
+.paginate {
+  width: 100%;
+  list-style: none;
+  display: inline-block;
+
+  > li {
+    font-weight: $base-font-weight-bold;
+    margin: 0;
+    padding: 0;
+  }
+
+  > li a {
+    display: block;
+    float: left;
+    color: $dark-grey;
+    text-decoration: none;
+    padding: 9px 18px;
+    margin-right: 12px;
+    border-radius: 50%;
+    background: $very-light-grey;
+  }
+
+  > li a:hover {
+    background: darken($very-light-grey, 8%);
+    border-bottom: 0px;
+  }
+
+  > li a.nude {
+    padding: 0;
+    margin: 9px 18px;
+    background: $white;
+    color: $orange;
+    border-radius: 0%;
+    font-weight: 300;
+  }
+
+  > li a.nude:hover {
+    border-bottom: 1px dotted $orange;
+  }
+
+  > li.current {
+    display: block;
+    float: left;
+    padding: 9px 18px;
+    margin-right: 12px;
+    border-radius: 50%;
+    color: $white;
+    background: $dark-grey;
+  }
+}
