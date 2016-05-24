@@ -31,6 +31,12 @@ $very-light-grey: #F2F2F2;
 $text: #1A1A1A;
 $orange-accessible: #AA3511;
 
+//transparent
+$very-light-grey-transp: rgba($very-light-grey, .95);
+$white-transp: rgba($white, .95);
+$light-yellow-transp: rgba($light-yellow, .95);
+
+
 //Font colours
 $light-text:    $white;
 $dark-text:     $dark-grey;
@@ -64,10 +70,14 @@ $colours: (
 		("dark-red", 	    	$dark-red, 			$dark-text)
 		("light-red",			$light-red, 		$dark-text)
 		("light-yellow", 		$light-yellow, 		$dark-text)
+		("light-yellow", 		$light-yellow, 		$dark-text)
 		("teal", 		    	$teal, 		    	$dark-text)
 		("light-blue", 	    	$light-blue, 		$dark-text)
         ("dark-purple",     	$dark-purple,   	$light-text)
         ("very-light-grey", 	$very-light-grey,   $dark-text)
+        ("very-light-grey-transp", 	$very-light-grey-transp,	$dark-text)
+		("light-yellow-transp",		$light-yellow-transp, 		$dark-text)
+		("white-transp",		$white-transp, 		$dark-text)
 );
 
 

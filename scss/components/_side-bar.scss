@@ -11,9 +11,9 @@
   position: fixed;
   top: 130px;
   border: 1px dotted #D9D9D6;
+  width: 16%;
 
   @include breakpoint(lg) {
-    width: 16%;
   }
 }
 
