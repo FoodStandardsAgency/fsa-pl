@@ -3,7 +3,7 @@
 //--[vars]--
 $baseline: 8px;
 $col: 6.66%;
-$large-complex-grid-cols: 15;
+$complex-grid-cols: 15;
 
 $xs-col: 25%;
 $xs-grid-cols: 4;
@@ -14,25 +14,58 @@ $xs-grid-cols: 4;
 
 // Breakpoint mixin in _breakpoints.scss
 
-// Generate the large columns
+// Generate the fluid columns
 @mixin make-fluid-column {
   position: relative;
   padding: 0 1.529412%;
   min-height: 1px;
   float: left;
 
-  @for $i from 1 through $large-complex-grid-cols {
+  @for $i from 1 through $complex-grid-cols {
     &--fluid-#{$i} {
       width: $col * $i;
+
+      @include breakpoint(xs) {
+        width: 100%;
+      }
+    }
+  }
+
+  //@include breakpoint(lg) {
+  //  @for $i from 1 through $complex-grid-cols {
+  //    &--fluid-lg-#{$i} {
+  //      width: $col * $i;
+  //    }
+  //  }
+  //}
+  //
+  //@include breakpoint(md) {
+  //  @for $i from 1 through $complex-grid-cols {
+  //    &--fluid-md-#{$i} {
+  //      width: $col * $i;
+  //    }
+  //  }
+  //}
+
+  @include breakpoint(sm) {
+    @for $i from 1 through $complex-grid-cols {
+      &--fluid-sm-#{$i} {
+        width: $col * $i;
+      }
     }
   }
 }
 
 @mixin make-fluid-offset {
-  @for $i from 1 through $large-complex-grid-cols {
+  @for $i from 1 through $complex-grid-cols {
     &--fluid-offset-#{$i} {
       margin-left: $col * $i;
+
+      @include breakpoint(xs) {
+        margin-left: 0;
+      }
     }
+
   }
 }
 
@@ -40,38 +73,74 @@ $xs-grid-cols: 4;
 
   &--fluid-one-half {
     width: 50%;
+
+    @include breakpoint(xs) {
+      width: 100%;
+    }
   }
 
   &--fluid-one-third {
     width: 33.333334%;
+
+    @include breakpoint(xs) {
+      width: 100%;
+    }
   }
 
   &--fluid-two-thirds {
     width: 66.666667%;
+
+    @include breakpoint(xs) {
+      width: 100%;
+    }
   }
 
   &--fluid-one-quarter {
     width: 25%;
+
+    @include breakpoint(xs) {
+      width: 100%;
+    }
   }
 
   &--fluid-three-quarters {
     width: 75%;
+
+    @include breakpoint(xs) {
+      width: 100%;
+    }
   }
 
   &--fluid-one-fifth {
     width: 20%;
+
+    @include breakpoint(xs) {
+      width: 100%;
+    }
   }
 
   &--fluid-two-fifths {
     width: 40%;
+
+    @include breakpoint(xs) {
+      width: 100%;
+    }
   }
 
   &--fluid-three-fifths {
     width: 60%;
+
+    @include breakpoint(xs) {
+      width: 100%;
+    }
   }
 
   &--fluid-four-fifths {
     width: 80%;
+
+    @include breakpoint(xs) {
+      width: 100%;
+    }
   }
 }
 

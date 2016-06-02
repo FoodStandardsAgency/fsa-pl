@@ -23,9 +23,6 @@
     }
   }
   &--img-first {
-    @include breakpoint(lg) {
-      height: 340px;
-      padding-bottom: 40px;
       position: relative;
       overflow: visible;
 
@@ -39,7 +36,6 @@
       img {
         margin-bottom: 16px;
       }
-    }
 
     @include breakpoint(xs) {
       article {
@@ -49,7 +45,6 @@
         img {
           width: 90%;
           margin-left: -100%;
-          // margin-right: 5%;
           float: left;
         }
       }
@@ -80,9 +75,6 @@
     }
   }
   &--img-first {
-    @include breakpoint(lg) {
-      height: 360px;
-      padding-bottom: 40px;
       position: relative;
       overflow: visible;
 
@@ -92,7 +84,11 @@
         overflow: hidden;
         bottom: 0;
       }
-    }
+
+      img {
+        margin-bottom: 16px;
+      }
+
     @include breakpoint(xs) {
       article {
         width: 50%;
@@ -101,7 +97,6 @@
         img {
           width: 90%;
           margin-left: -100%;
-          // margin-right: 5%;
           float: left;
         }
       }
@@ -111,41 +106,37 @@
 
 .separator-right-solid {
 
-  @include breakpoint(lg) {
-    &:before {
-      content: "";
-      position: absolute;
-      z-index: 1;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      border-right: 2px solid $light-grey;
-    }
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border-right: 2px solid $light-grey;
   }
 
   @include breakpoint(xs) {
     &:before {
       content: "";
       height: 1px;
+      width: 100%;
       background: $light-grey;
-      position: absolute;
-      bottom: -14px;
+      top: inherit;
     }
   }
 }
 
 .separator-left-solid {
 
-  @include breakpoint(lg) {
-    &:before {
-      content: "";
-      position: absolute;
-      z-index: 1;
-      top: 50px;
-      bottom: 0;
-      left: 0;
-      border-right: 2px solid $light-grey;
-    }
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-right: 2px solid $light-grey;
   }
 
   @include breakpoint(xs) {
@@ -160,7 +151,7 @@
 }
 
 .separator-dotted {
-  border: 4px dotted #97999B;
+  border: 4px dotted $mid-grey;
   border-image-source: url('../../img/dots.svg');
   border-image-slice: 25% 25%;
   border-image-repeat: round;
@@ -173,13 +164,29 @@
 .pdf-separator-dotted {
   border: 7px dotted $mid-grey;
   border-image-source: url('../../img/dots.svg');
-  border-image-slice: 30%;
+  border-image-slice: 25% 25%;
   border-image-repeat: round;
   border-left: 0;
   border-right: 0;
-  height: 86%;
-  margin: 0 0 0 20px;
-  padding-top: 16px;
+  margin: 0 0 8px 8px;
+  padding: 16px 0;
+
+  &:before {
+    content: '';
+    padding-left: 80px;
+    margin: 0;
+    height: 50px;
+    background-image: url("../../img/pdf.png");
+    background-repeat: no-repeat;
+    background-size: 50px;
+    display: inline-block;
+  }
+
+  > span {
+    display: inline-block;
+    width: 63%;
+    vertical-align: top;
+  }
 }
 
 .campaign-separator-dotted {
@@ -192,17 +199,10 @@
   height: 86%;
   margin: 7%;
   padding-top: 16px;
-}
 
-.style-pdf {
-  padding-left: 80px;
-  margin: 0;
-  height: 104px;
-  background-image: url('../../img/pdf.png');
-  background-repeat: no-repeat;
-  background-size: 90px;
-  & div {
-    display: block;
+
+  @include breakpoint(xs) {
+    margin-bottom: 8px;
   }
 }
 
@@ -225,17 +225,25 @@
     color: #51284F;
   }
   & button {
-    color:#FFF;
+    color: #FFF;
     margin: 0 32%;
   }
 }
 
 .menu-active {
   border-bottom: 15px solid #53565A !important;
+
+  @include breakpoint(xs) {
+    border-bottom: 10px solid #53565A !important;
+  }
 }
 
 .menu-inactive {
   border-bottom: 15px solid #F2F2F2;
+
+  @include breakpoint(xs) {
+    border-bottom: 10px solid #F2F2F2;
+  }
 }
 
 .bar--new-site {
@@ -255,11 +263,12 @@
   & p {
     margin: 0;
     font-size: 21px;
-    line-height: 16px;
+    line-height: 21px;
   }
 
   & a {
     color: $white;
+    border-bottom-color: $white;
   }
 
   & #oldsite {
@@ -272,17 +281,26 @@
       border: 2px solid $white;
     }
   }
+
+  @include breakpoint(xs) {
+    height: 100%;
+
+    & .col-wrap {
+      margin-bottom: 8px;
+    }
+  }
 }
 
 .regional {
   display: inline-block;
   padding: 8px 12px;
   background-color: #F2F2F2;
+  font-size: 16px;
   font-weight: 700;
 }
 
 .border-pic--transparent:before {
-  content:'';
+  content: '';
   position: absolute;
   left: 0;
   top: 0;
@@ -291,8 +309,9 @@
   background: $very-light-grey-transp;
   filter: alpha(opacity=20); /* For IE8 and earlier */
 }
+
 .border-pic--transparent:after {
-  content:'';
+  content: '';
   position: absolute;
   right: 0;
   top: 0;
@@ -303,10 +322,21 @@
 }
 
 .border-white--transparent:before {
-  content:'';
+  content: '';
   position: absolute;
   top: 0;
   height: 100%;
   width: 1.529412%;
   left: 0;
+}
+
+.big-number {
+  font-size: 110px;
+  line-height: 120px;
+  font-weight: 700;
+
+  @include breakpoint(sm) {
+    font-size: 100px;
+    line-height: 100px;
+  }
 }

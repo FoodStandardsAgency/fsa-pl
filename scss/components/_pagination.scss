@@ -20,11 +20,12 @@
     margin: 0 6px;
     border-radius: 50%;
     background: $very-light-grey;
+    border-bottom: 0;
   }
 
   > li a:hover {
     background: darken($very-light-grey, 8%);
-    border-bottom: 0px;
+    border-bottom: 0;
   }
 
   > li a.nude {
@@ -34,9 +35,6 @@
     color: $orange-accessible;
     border-radius: 0%;
     font-weight: 300;
-  }
-
-  > li a.nude:hover {
     border-bottom: 1px dotted $orange-accessible;
   }
 

@@ -10,11 +10,11 @@
   margin: 4px 12px 4px 0;
   display: inline-block;
 
-  &:hover {
+  & a {
     border-bottom: 0 solid white;
   }
 
-  & span:hover {
+  & span {
     border-bottom: 1px dotted $orange-accessible;
   }
 }

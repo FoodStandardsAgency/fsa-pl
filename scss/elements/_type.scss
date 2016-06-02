@@ -78,6 +78,12 @@ p {
   line-height: 28px;
   margin: ($baseline * 2) 0;
   padding: 6px 0 10px 0;
+
+  @include breakpoint(xs) {
+    margin: 4px 0 0 0;
+    padding: 4px 0;
+    line-height: 24px;
+  }
 }
 
 ul, ol {
@@ -101,10 +107,20 @@ a {
   text-decoration: none;
   color: $orange-accessible;
   word-wrap: break-word;
+  border-bottom: 1px dotted $orange-accessible;
 
-  &:hover,
-  &:focus {
-    border-bottom: 1px dotted $orange-accessible;
+  //without this tags have two underlines
+  &.tag {
+    border-bottom: 0;
+  }
+
+  &.no-underline {
+    border-bottom: 0;
+  }
+
+  &.text-colour {
+    color: $text;
+    border-bottom: 1px dotted $text;
   }
 }
 

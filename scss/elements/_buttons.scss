@@ -48,6 +48,18 @@ button {
     }
   }
 
+  &--support {
+    background-color: $white;
+    color: $dark-purple;
+    font-size: 28px;
+    font-weight: 700;
+
+    &:hover,
+    &:focus {
+      background-color: darken($white, 8%);
+    }
+  }
+
   //&--action-active {
   //  background-color: $active;
   //

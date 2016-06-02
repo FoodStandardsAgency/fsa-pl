@@ -9,6 +9,7 @@
   &__list {
     padding: 6px 0 18px 0;
     margin-top: $baseline;
+    list-style-type: none;
 
     @include breakpoint(lg) {
       -webkit-column-count: 2;
@@ -19,7 +20,7 @@
   }
 
   &__item {
-    margin: 0 0 0 ($baseline * 4);
+    margin: 0;
     padding: 0 0 20px 0;
     -webkit-column-break-inside: avoid;
     -moz-column-break-inside: avoid;

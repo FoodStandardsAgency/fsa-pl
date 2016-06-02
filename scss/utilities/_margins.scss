@@ -5,6 +5,13 @@
     //
     &-top {
       @for $i from 0 through 8 {
+        @include breakpoint(xs) {
+          &-xs--#{$i} {
+            margin-top: ($baseline * $i) !important;
+          }
+        }
+      }
+      @for $i from 0 through 8 {
         @include breakpoint(sm) {
           &-sm--#{$i} {
             margin-top: ($baseline * $i) !important;
@@ -21,6 +28,13 @@
       @for $i from 0 through 8 {
         @include breakpoint(lg) {
           &-lg--#{$i} {
+            margin-top: ($baseline * $i) !important;
+          }
+        }
+      }
+      @for $i from 0 through 8 {
+        @include breakpoint(not-xs) {
+          &-not-xs--#{$i} {
             margin-top: ($baseline * $i) !important;
           }
         }
@@ -33,6 +47,13 @@
     }
     &-bottom {
       @for $i from 0 through 8 {
+        @include breakpoint(xs) {
+          &-xs--#{$i} {
+            margin-bottom: ($baseline * $i) !important;
+          }
+        }
+      }
+      @for $i from 0 through 8 {
         @include breakpoint(sm) {
           &-sm--#{$i} {
             margin-bottom: ($baseline * $i) !important;
@@ -49,6 +70,13 @@
       @for $i from 0 through 8 {
         @include breakpoint(lg) {
           &-lg--#{$i} {
+            margin-bottom: ($baseline * $i) !important;
+          }
+        }
+      }
+      @for $i from 0 through 8 {
+        @include breakpoint(not-xs) {
+          &-not-xs--#{$i} {
             margin-bottom: ($baseline * $i) !important;
           }
         }
@@ -64,6 +92,13 @@
       // TODO check length for sm, md and lg
       // Are we ever using a breakpoint-sm--59?
       @for $i from 0 through 59 {
+        @include breakpoint(xs) {
+          &-xs--#{$i} {
+            margin-left: ($baseline * $i) !important;
+          }
+        }
+      }
+      @for $i from 0 through 59 {
         @include breakpoint(sm) {
           &-sm--#{$i} {
             margin-left: ($col * $i) !important;
@@ -81,6 +116,13 @@
         @include breakpoint(lg) {
           &-lg--#{$i} {
             margin-left: ($col * $i) !important;
+          }
+        }
+      }
+      @for $i from 0 through 59 {
+        @include breakpoint(not-xs) {
+          &-not-xs--#{$i} {
+            margin-left: ($baseline * $i) !important;
           }
         }
       }
@@ -92,6 +134,13 @@
     }
     &-right {
       @for $i from 0 through 59 {
+        @include breakpoint(xs) {
+          &-xs--#{$i} {
+            margin-right: ($baseline * $i) !important;
+          }
+        }
+      }
+      @for $i from 0 through 59 {
         @include breakpoint(sm) {
           &-sm--#{$i} {
             margin-right: ($col * $i) !important;
@@ -109,6 +158,13 @@
         @include breakpoint(lg) {
           &-lg--#{$i} {
             margin-right: ($col * $i) !important;
+          }
+        }
+      }
+      @for $i from 0 through 59 {
+        @include breakpoint(not-xs) {
+          &-not-xs--#{$i} {
+            margin-right: ($baseline * $i) !important;
           }
         }
       }

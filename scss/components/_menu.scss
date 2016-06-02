@@ -1,5 +1,49 @@
 //_menu.scss
 
+.campaign-menu {
+  height: 480px;
+  position: relative;
+
+  > .wrapper {
+    position: absolute;
+    width: 98.5%;
+    bottom: 16px;
+    left: 12px;
+
+    >.col-wrap > .col {
+      border-bottom: 5px solid $light-yellow;
+
+      & h1 {
+        margin: 8px 0;
+        color: $black;
+      }
+    }
+
+    @include breakpoint(xs) {
+      position: relative;
+      width: 100%;
+    }
+  }
+
+  @include breakpoint(xs) {
+    height: 100%;
+  }
+}
+
+.campaign-nav > ul {
+  margin: 0;
+  padding: 0;
+
+  > li {
+    margin: 0;
+    height: 124px;
+
+    @include breakpoint(xs) {
+      height: 100%;
+    }
+  }
+}
+
 .navbar {
   position: relative;
   margin-bottom: 20px;
@@ -27,12 +71,26 @@
   width: 110%;
   margin-left: -22px;
   padding: 0 22px;
+
+  & h2 {
+    margin: 0 5px;
+    color: $black;
+  }
 }
-.menu-b {
+#menu-b {
   background: white;
   width: 110%;
+  padding-left: 0;
   margin-left: -22px;
-  padding: 0 22px;
+  border-left: 2px solid #D9D9D6;
+
+  @include breakpoint(md) {
+    padding-left: 4px;
+  }
+
+  @include breakpoint(sm) {
+    padding-left: 8px;
+  }
 }
 
 .shadow {
