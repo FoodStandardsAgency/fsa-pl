@@ -23,19 +23,19 @@
     }
   }
   &--img-first {
-      position: relative;
-      overflow: visible;
+    position: relative;
+    overflow: visible;
 
-      footer {
-        position: absolute;
-        height: 40px;
-        overflow: hidden;
-        bottom: 0;
-      }
+    footer {
+      position: absolute;
+      height: 40px;
+      overflow: hidden;
+      bottom: 0;
+    }
 
-      img {
-        margin-bottom: 16px;
-      }
+    img {
+      margin-bottom: 16px;
+    }
 
     @include breakpoint(xs) {
       article {
@@ -75,19 +75,19 @@
     }
   }
   &--img-first {
-      position: relative;
-      overflow: visible;
+    position: relative;
+    overflow: visible;
 
-      footer {
-        position: absolute;
-        height: 40px;
-        overflow: hidden;
-        bottom: 0;
-      }
+    footer {
+      position: absolute;
+      height: 40px;
+      overflow: hidden;
+      bottom: 0;
+    }
 
-      img {
-        margin-bottom: 16px;
-      }
+    img {
+      margin-bottom: 16px;
+    }
 
     @include breakpoint(xs) {
       article {
@@ -173,7 +173,7 @@
 
   &:before {
     content: '';
-    padding-left: 80px;
+    padding-left: 55px;
     margin: 0;
     height: 50px;
     background-image: url("../../img/pdf.png");
@@ -199,7 +199,6 @@
   height: 86%;
   margin: 7%;
   padding-top: 16px;
-
 
   @include breakpoint(xs) {
     margin-bottom: 8px;
@@ -227,22 +226,6 @@
   & button {
     color: #FFF;
     margin: 0 32%;
-  }
-}
-
-.menu-active {
-  border-bottom: 15px solid #53565A !important;
-
-  @include breakpoint(xs) {
-    border-bottom: 10px solid #53565A !important;
-  }
-}
-
-.menu-inactive {
-  border-bottom: 15px solid #F2F2F2;
-
-  @include breakpoint(xs) {
-    border-bottom: 10px solid #F2F2F2;
   }
 }
 
@@ -275,7 +258,7 @@
     margin-top: 1.4%;
 
     & p {
-      margin-top: 5%;
+      margin-top: 1%;
       padding: 10px;
       text-align: center;
       border: 2px solid $white;
@@ -338,5 +321,40 @@
   @include breakpoint(sm) {
     font-size: 100px;
     line-height: 100px;
+  }
+}
+
+.styled-ul {
+  list-style: none;
+
+  li {
+    padding-right: 16px;
+    text-indent: -26px;
+
+    &:before {
+      content: "•";
+      margin-right: 12px;
+      font-size: 44px;
+      color: $light-purple;
+      vertical-align: bottom;
+    }
+  }
+}
+
+.styled-ol {
+  counter-reset: item;
+
+  li {
+    display: block;
+    text-indent: -10px;
+
+
+    &:before {
+      content: counter(item) ". ";
+      counter-increment: item;
+      padding-right: 12px;
+      margin-left: -20px;
+      color: $light-purple;
+    }
   }
 }
