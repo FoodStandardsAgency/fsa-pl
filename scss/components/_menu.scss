@@ -95,5 +95,21 @@
 
 .shadow {
   box-shadow: 0px 20px 30px -20px #555;
-  //border-bottom: 1px solid #D9D9D6;
+}
+
+
+.menu-active {
+  border-bottom: 15px solid #53565A !important;
+
+  @include breakpoint(xs) {
+    border-bottom: 10px solid #53565A !important;
+  }
+}
+
+.menu-inactive {
+  border-bottom: 15px solid #F2F2F2;
+
+  @include breakpoint(xs) {
+    border-bottom: 10px solid #F2F2F2;
+  }
 }
