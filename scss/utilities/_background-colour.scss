@@ -20,3 +20,28 @@
 
 @include background-util;
 
+
+// Transparent backgrounds
+
+@mixin alpha-background-color($color, $background) {
+    $percent: alpha($color) * 100%;
+    $opaque: opacify($color, 1);
+    $solid-color: mix($opaque, $background, $percent);
+    background-color: $solid-color;
+    background-color: $color;
+}
+
+.background--very-light-grey-transp {
+    @include alpha-background-color(rgba($very-light-grey, 0.85), $very-light-grey);
+    color: $text;
+}
+
+.background--white-transp {
+    @include alpha-background-color(rgba($white, 0.95), $white);
+    color: $text;
+}
+
+.background--light-yellow-transp {
+    @include alpha-background-color(rgba($light-yellow, 0.85), $light-yellow);
+    color: $text;
+}
