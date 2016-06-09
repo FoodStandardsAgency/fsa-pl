@@ -44,11 +44,6 @@ $base-font-weight-thin: 100;
     font-weight: $base-font-weight-bold;
     line-height: 48px;
   }
-  &--standout {
-    font-size: 28px !important;
-    font-weight: $base-font-weight-regular;
-    line-height: 32px;
-  }
   &--quote {
     font-size: 48px !important;
     font-weight: $base-font-weight-thin;
@@ -60,9 +55,13 @@ $base-font-weight-thin: 100;
     font-weight: $base-font-weight-regular;
     line-height: 24px;
   }
-  &--small-bold {
-    font-size: 16px !important;
-    font-weight: $base-font-weight-bold;
-    line-height: 24px;
+  &--bold {
+    font-weight: $base-font-weight-bold !important;
+  }
+  &--regular {
+    font-weight: $base-font-weight-regular !important;
+  }
+  &--thin {
+    font-weight: $base-font-weight-thin !important;
   }
 }

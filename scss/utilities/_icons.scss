@@ -1,358 +1,250 @@
-//_icons.scss
+$png: '../../img/fsa-sprite.png';
 
-////Mixing to create a small version of each icon. Add parameter for background-position to get 2px version of icon
-//@mixin small-icon($horizontal, $vertical) {
-//	background-position: $horizontal $vertical;
-//	zoom:0.5;
-//	-moz-transform:scale(0.5);
-//	-moz-transform-origin: 0 0;
-//}
+.icon {
+  background-image: url($png);
+  background-repeat: no-repeat;
+  display: inline-block;
 
-@mixin small-icon {
-    height: 16px;
-    width: 20px;
+  &-linkedin {
+    &--black {
+      background-position: -17px -87px;
+      width: 31px;
+      height: 31px;
+    }
+    &--black-small {
+      background-position: -16px -12px;
+      width: 16px;
+      height: 16px;
+    }
+    &--white {
+      background-position: -17px -146px;
+      width: 31px;
+      height: 31px;
+    }
+    &--white-small {
+      background-position: -16px -41px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &-google {
+    &--black {
+      background-position: -99px -87px;
+      width: 30px;
+      height: 31px;
+    }
+    &--white {
+      background-position: -17px -146px;
+      width: 31px;
+      height: 31px;
+    }
+    &--black-small {
+      background-position: -56px -12px;
+      width: 16px;
+      height: 16px;
+    }
+    &--white-small {
+      background-position: -56px -41px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &-twitter {
+    &--black {
+      background-position: -180px -87px;
+      width: 38px;
+      height: 31px;
+    }
+    &--white {
+      background-position: -180px -146px;
+      width: 38px;
+      height: 31px;
+    }
+    &--black-small {
+      background-position: -96px -12px;
+      width: 20px;
+      height: 16px;
+    }
+    &--white-small {
+      background-position: -96px -41px;
+      width: 20px;
+      height: 16px;
+    }
+  }
+
+  &-facebook {
+    &--black {
+      background-position: -268px -87px;
+      width: 17px;
+      height: 31px;
+    }
+    &--white {
+      background-position: -268px -146px;
+      width: 17px;
+      height: 31px;
+    }
+    &--black-small {
+      background-position: -140px -12px;
+      width: 9px;
+      height: 16px;
+    }
+    &--white-small {
+      background-position: -140px -41px;
+      width: 9px;
+      height: 16px;
+    }
+  }
+
+  &-share {
+    &--black {
+      background-position: -336px -87px;
+      width: 27px;
+      height: 31px;
+    }
+    &--white {
+      background-position: -336px -146px;
+      width: 27px;
+      height: 31px;
+    }
+    &--black-small {
+      background-position: -173px -12px;
+      width: 14px;
+      height: 16px;
+    }
+    &--white-small {
+      background-position: -173px -41px;
+      width: 14px;
+      height: 16px;
+    }
+  }
+
+  &-home {
+    &--black {
+      background-position: -399px -77px;
+      width: 50px;
+      height: 42px;
+    }
+    &--white {
+      background-position: -399px -136px;
+      width: 50px;
+      height: 42px;
+    }
+    &--black-small {
+      background-position: -204px -7px;
+      width: 26px;
+      height: 21px;
+    }
+    &--white-small {
+      background-position: -204px -36px;
+      width: 26px;
+      height: 21px;
+    }
+  }
+
+  &-pdf {
+    &--large {
+      background-position: -16px -289px;
+      width: 78px;
+      height: 89px;
+    }
+    &--small {
+      background-position: -16px -215px;
+      width: 40px;
+      height: 45px;
+    }
+  }
+
+  &-doc {
+    &--large {
+      background-position: -122px -289px;
+      width: 78px;
+      height: 89px;
+    }
+    &--small {
+      background-position: -69px -215px;
+      width: 40px;
+      height: 45px;
+    }
+  }
+
+  &-json {
+    &--large {
+      background-position: -231px -289px;
+      width: 78px;
+      height: 89px;
+    }
+    &--small {
+      background-position: -123px -215px;
+      width: 40px;
+      height: 45px;
+    }
+  }
+
+  &-xls {
+    &--large {
+      background-position: -338px -289px;
+      width: 78px;
+      height: 89px;
+    }
+    &--small {
+      background-position: -177px -215px;
+      width: 39px;
+      height: 45px;
+    }
+  }
+
+  &-csv {
+    &--large {
+      background-position: -446px -289px;
+      width: 78px;
+      height: 89px;
+    }
+    &--small {
+      background-position: -231px -215px;
+      width: 39px;
+      height: 45px;
+    }
+  }
+
+  &-file {
+    &--large {
+      background-position: -551px -289px;
+      width: 78px;
+      height: 89px;
+    }
+    &--small {
+      background-position: -283px -215px;
+      width: 40px;
+      height: 45px;
+    }
+  }
+
+  &-separator {
+    &--large {
+      font-size:40px;
+      font-weight: 100;
+      padding: 0 8px;
+    }
+    &--small {
+      font-size:20px;
+      font-weight: 100;
+      padding: 0 5px;
+    }
+  }
+
+  &--hide:after {
+    //For use in situations where icons are automatically added but not wanted and a global solution isn't viable
+    display: none !important;
+  }
+
 }
 
-
-
-$sprite: '../img/icon-sprite.png?#{$builddatetime}';
-$png: '../img/icon-sprite.png?#{$builddatetime}';
-$svg: '../img/icon-sprite.svg?#{$builddatetime}';
-
-
-// Don't show icons on print - stops conflicts with print :after for links too
-@media screen {
-    .icon {
-        display: inline-block;
-        background-image:url($png);
-        background-image:url($svg);
-        background-repeat: no-repeat;
-        background-size: 300px 1000px;
-        height: 36px;
-        width: 40px;
-
-        &-arrow-up {
-
-            &--dark {
-                background-position: -16px -14px;
-                height: ($baseline * 4);
-            }
-
-            &--dark-small {
-                background-position: -138px -14px;
-                @include small-icon;
-                height: ($baseline * 2);
-            }
-
-            &--light {
-                background-position: -80px -14px;
-                height: ($baseline * 4);
-            }
-
-            &--light-small {
-                background-position: -170px -14px;
-                @include small-icon;
-                height: ($baseline * 2);
-            }
-        }
-
-
-        &-arrow-down {
-
-            &--dark {
-                background-position: -16px -44px;
-            }
-
-            &--dark-small {
-                background-position: -138px -30px;
-                @include small-icon;
-                height: ($baseline * 2);
-            }
-
-            &--light {
-                background-position: -80px -44px;
-            }
-
-            &--light-small {
-                background-position: -170px -30px;
-                @include small-icon;
-                height: ($baseline * 2);
-            }
-        }
-
-        &-arrow-right {
-
-            &--dark {
-                background-position: -16px -478px;
-            }
-
-            &--dark-small {
-                background-position: -138px -246px;
-                @include small-icon;
-            }
-
-            &--light {
-                background-position: -80px -478px;
-            }
-
-            &--light-small {
-                background-position: -170px -246px;
-                @include small-icon;
-            }
-        }
-
-        &-arrow-left {
-
-            &--dark {
-                background-position: -16px -542px;
-            }
-
-            &--dark-small {
-                background-position: -138px -278px;
-                @include small-icon;
-            }
-
-            &--light {
-                background-position: -80px -542px;
-            }
-
-            &--light-small {
-                background-position: -170px -278px;
-                @include small-icon;
-            }
-        }
-
-
-        &-print {
-
-            &--dark {
-                background-position: -14px -76px;
-                width: 40px; //icon needs more width or else it cuts off one side
-            }
-
-            &--dark-small {
-                background-position: -138px -46px;
-                @include small-icon;
-            }
-
-            &--light {
-                background-position: -79px -76px;
-                width: 40px;
-            }
-
-            &--light-small {
-                background-position: -170px -46px;
-                @include small-icon;
-            }
-        }
-
-
-        &-external {
-
-            &--dark {
-                background-position: -14px -126px;
-            }
-
-            &--dark-small {
-                background-position: -138px -71px;
-                @include small-icon;
-                width: 16px;
-            }
-
-            &--light {
-                background-position: -79px -126px;
-            }
-
-            &--light-small {
-                background-position: -170px -71px;
-                @include small-icon;
-                width: 16px;
-            }
-        }
-
-
-        &-download {
-
-            &--dark {
-                background-position: -14px -173px;
-            }
-
-            &--dark-small {
-                background-position: -138px -95px;
-                @include small-icon;
-            }
-
-            &--light {
-                background-position: -79px -173px;
-            }
-
-            &--light-small {
-                background-position: -170px -95px;
-                @include small-icon;
-            }
-        }
-
-
-        &-calendar {
-            &--dark {
-                background-position: -14px -221px;
-            }
-
-            &--dark-small {
-                background-position: -138px -119px;
-                @include small-icon;
-            }
-
-            &--light {
-                background-position: -79px -221px;
-            }
-
-            &--light-small {
-                background-position: -170px -119px;
-                @include small-icon;
-            }
-        }
-
-
-        &-rss {
-
-            &--dark {
-                background-position: -14px -268px;
-            }
-
-            &--dark-small {
-                background-position: -138px -143px;
-                @include small-icon;
-            }
-
-            &--light {
-                background-position: -79px -268px;
-            }
-
-            &--light-small {
-                background-position: -170px -143px;
-                @include small-icon;
-            }
-        }
-
-
-        &-menu {
-
-            &--dark {
-                background-position: -14px -325px;
-            }
-
-            &--dark-small {
-                background-position: -138px -171px;
-                @include small-icon;
-            }
-
-            &--light {
-                background-position: -79px -325px;
-            }
-
-            &--light-small {
-                background-position: -170px -171px;
-                @include small-icon;
-            }
-
-        }
-
-
-        &-search {
-
-            &--dark {
-                background-position: -12px -387px;
-                height: ($baseline * 3); // Smaller icon so smaller height & width
-                width: ($col * 2)
-            }
-
-            &--dark-small {
-                background-position: -138px -196px;
-                @include small-icon;
-            }
-
-            &--light {
-                background-position: -74px -387px;
-                height: ($baseline * 3); // Smaller icon so smaller height & width
-                width: ($col * 2)
-            }
-
-            &--light-small {
-                background-position: -170px -196px;
-                @include small-icon;
-            }
-
-        }
-
-        &-return {
-
-            &--dark {
-                background-position: -14px -613px;
-            }
-
-            &--dark-small {
-                background-position: -138px -313px;
-                @include small-icon;
-                height: 18px;
-            }
-
-            &--light {
-                background-position: -79px -613px;
-            }
-
-            &--light-small {
-                background-position: -170px -313px;
-                @include small-icon;
-                height: 18px;
-            }
-        }
-
-        &-info {
-            background-position: -15px -679px;
-            width: 35px;
-            height: 35px;
-
-            &--info-box {
-                position: absolute;
-                left: $col;
-                top: 22px;
-            }
-
-
-            // specific class to all previous versions text to appear along side on grid
-            &--inline {
-                background-position: -15px -677px;
-                width: 35px;
-                height: 35px;
-                display: block;
-                margin-bottom: -26px;
-            }
-
-
-        }
-
-        &-drop-down {
-            background-position: -16px -738px;
-        }
-
-
-
-        &--hide:after {
-            //For use in situations where icons are automatically added but not wanted and a global solution isn't viable
-            display: none !important;
-        }
-
-    }
-
-
-    //Add external link icon (:not excludes domains)
-    a[target=_blank]:after {
-        @extend .icon;
-        @extend .icon-external--dark-small;
-        content: "";
-        margin-left: 8px;
-    }
+//Add external link icon (:not excludes domains)
+a[target=_blank]:after {
+  @extend .icon;
+  @extend .icon-share--black-small;
+  content: "";
+  margin-left: 8px;
 }
-
-

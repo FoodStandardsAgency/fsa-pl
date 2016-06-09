@@ -60,16 +60,6 @@ button {
     }
   }
 
-  //&--action-active {
-  //  background-color: $active;
-  //
-  //  &:hover,
-  //  &:focus {
-  //    background-color: $active;
-  //    cursor: default;
-  //  }
-  //}
-
   &--action-alt {
     background-color: $dark-purple;
     color: $white;
@@ -93,9 +83,13 @@ button {
   &--search {
     background-color: $mid-green;
     border-radius: 50%;
-    padding: 8% 12%;
-    margin-top: 30%;
+    padding: 10px 14px;
     color: $white;
+    background:url(../../img/search-icon.png);
+    background-repeat: no-repeat;
+    width:40px;
+    height:40px;
+    border: 0;
 
     &:hover,
     &:focus {
@@ -174,7 +168,6 @@ button {
   }
 
   input {
-    //display: none; //breaks keyboard tabbing/focus
     height: 0px;
     width: 0px;
     position: absolute;

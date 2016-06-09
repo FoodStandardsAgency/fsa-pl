@@ -8,10 +8,10 @@ $old-ie: false;
 @import "utilities/reset";
 @import "utilities/breakpoints";
 @import "utilities/grid-fluid";
-@import "utilities/colours";
 //@import "utilities/vertical_rythm";
 //@import "utilities/typography";
 @import "utilities/utilities";
+@import "utilities/icons";
 @import "utilities/margins";
 @import "utilities/padding";
 @import "utilities/background-colour";
@@ -25,7 +25,6 @@ $old-ie: false;
 
 
 @import "components/header";
-@import "components/slates";
 @import "components/breadcrumb";
 @import "components/alert";
 @import "components/forms";
@@ -35,8 +34,6 @@ $old-ie: false;
 @import "components/table";
 @import "components/table-of-contents";
 @import "components/side-bar";
-
-
 @import "components/page-blocks";
 @import "components/twitter-feed";
 @import "components/news-tile";

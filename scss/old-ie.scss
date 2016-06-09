@@ -8,8 +8,8 @@ $old-ie: true;
 @import "utilities/reset";
 @import "utilities/breakpoints";
 @import "utilities/grid-fluid";
-@import "utilities/colours";
 @import "utilities/utilities";
+@import "utilities/icons";
 @import "utilities/margins";
 @import "utilities/padding";
 @import "utilities/background-colour";
@@ -23,7 +23,6 @@ $old-ie: true;
 
 
 @import "components/header";
-@import "components/slates";
 @import "components/breadcrumb";
 @import "components/alert";
 @import "components/forms";

@@ -4,7 +4,8 @@
 
 .primary-nav {
 
-    background-color: $dark-grey;
+    background-color: $black;
+    margin: 0 1.529412%;
     position: relative;
 
     @include breakpoint(md) {
@@ -21,8 +22,9 @@
         list-style: none;
         margin: 0;
         overflow: hidden;
+        z-index: 10;
 
-        @include breakpoint(sm) {
+        @include breakpoint(xs) {
             padding: $baseline 0;
         }
 
@@ -34,21 +36,12 @@
         padding: 0;
         cursor: pointer;
 
-        @include breakpoint(sm) {
+        @include breakpoint(xs) {
             height: $baseline * 6;
         }
 
         @include breakpoint(md) {
             float: left;
-            //height: 86px;
-
-            &:nth-child(6) a {
-                border-right: 1px solid $black;
-            }
-        }
-
-        @include breakpoint(lg) {
-            //height: 62px;
         }
 
         //children show on hover
@@ -59,7 +52,6 @@
                 color: $white;
                 text-decoration: none;
                 left: auto; //resets child-items to appear on-screen
-                //top: 86px; //2px less to cover borders on parent
             }
 
             @include breakpoint(lg) {
@@ -67,7 +59,6 @@
                 color: $white;
                 text-decoration: none;
                 left: auto; //resets child-items to appear on-screen
-                //top: 62px;  //2px less to cover borders on parent
             }
         }
 
@@ -76,13 +67,11 @@
         &:focus > a,
         &--focus > a {
             @include breakpoint(md) {
-                //border-left: 1px solid $black;
                 background-color: $black;
                 color: $white;
                 text-decoration: none;
             }
             @include breakpoint(lg) {
-                //border-left: 1px solid $black;
                 background-color: $black;
                 color: $white;
                 text-decoration: none;
@@ -111,39 +100,43 @@
 
     }
 
+
     &__link {
+        float: left;
+        display: block;
+        padding: 8px 1.509412%;
+        border-bottom: 0;
+        height: 44px;
+        overflow: hidden;
+        font-size: 18px;
         color: $light-grey;
         text-decoration: none;
 
-        @include breakpoint(sm) {
-            //height: ($baseline * 6);
+        @include breakpoint(xs) {
             padding: 14px 0 10px $col;
+        }
+
+        @include breakpoint(sm) {
+            display: inline-block;
+            padding: 8px 7px 3px 3px;
+            font-size: 13px;
         }
 
         @include breakpoint(md) {
             display: inline-block;
-            padding: 5px $baseline*2 3px $baseline*2;
-            //border-left: 1px solid $black;
-            //height: 86px;
-            font-size: 13px; // smaller font on medium for retina screens
-        }
-
-        @include breakpoint(lg) {
-            //height: 62px;
-            font-size: 14px;
+            padding: 8px $baseline*2 3px $baseline*2;
+            font-size: 14px; // smaller font on medium for retina screens
         }
 
         //set focus styling - has to be on link to work (hover styling on li)
         &:focus {
             @include breakpoint(md) {
-                //border-left: 1px solid $black;
                 background-color: $black;
                 color: $white;
                 text-decoration: none;
             }
 
             @include breakpoint(lg) {
-                //border-left: 1px solid $black;
                 background-color: $black;
                 color: $white;
                 text-decoration: none;
@@ -156,14 +149,12 @@
                 background-color: $black;
                 text-decoration: none;
                 left: auto; //resets child-items to appear on-screen
-                //top: 86px; //2px less to cover same colour border on parent <li>
             }
 
             @include breakpoint(lg) {
                 background-color: $black;
                 text-decoration: none;
                 left: auto; //resets child-items to appear on-screen
-                //top: 62px;
             }
         }
 
@@ -173,284 +164,79 @@
 
     }
 
-    //NAVIGATION CHILDREN
-
-    &__child-list {
-        list-style: none;
-        color: $white;
-        margin: 0;
-
-        @include breakpoint(sm) {
-            //display: none; //done with js-nav-hidden class
-            background-color: $dark-grey;
-            padding: 0;
-        }
-
-        @include breakpoint(md) {
-            position: absolute;
-            padding: 0;
-            z-index: 10;
-            left: -99999px; //used instead of display:none so it's accessible to screen readers
-            border: 1px solid $black;
-        }
+    &__link:hover,
+    &__link:focus,
+    &__item:hover
+    &__link {
+        border-bottom: 0;
+        background: $very-light-grey !important;
+        color: $dark-grey !important;
     }
 
-    &__child-item {
+    &__link--fhr {
+        float: right;
+        background: $dark-green;
+    }
+
+    &__item:hover .mega-menu {
         display: block;
-        margin: 0;
-        padding: 0;
-
-        &--active {
-            background-color: $black;
-        }
+        cursor: default;
     }
-
-    &__child-link {
-        display: block;
-        color: $white;
-
-        @include breakpoint(sm) {
-            height: 48px;
-            padding: 14px 0 12px $col;
-        }
-
-        @include breakpoint(md) {
-            padding: 14px 0 10px $col;
-
-            &:hover,
-            &:focus {
-                outline: 0;
-                background-color: $mid-grey;
-                text-decoration: none;
-                color: $dark-grey;
-            }
-        }
-    }
-
-    // SECONDARY NAV CONTENT - ONLY SHOW ON MOBILE
-
-    //&--secondary {
-    //
-    //
-    //	&__list {
-    //
-    //		@include breakpoint(sm) {
-    //			padding: 0 0 $baseline 0;
-    //			margin: 0;
-    //		}
-    //
-    //		@include breakpoint(md) {
-    //			display: none;
-    //		}
-    //	}
-    //
-    //	&__item {
-    //
-    //		@include breakpoint(sm) {
-    //			display: block;
-    //			padding: 0;
-    //			margin: 0;
-    //			height: $baseline * 6;
-    //			cursor: pointer;
-    //		}
-    //	}
-    //
-    //	&__link {
-    //		@include breakpoint(sm) {
-    //			display: block;
-    //			height: $baseline * 6;
-    //			padding: 14px 0 10px $col;
-    //			color: $iron-light;
-    //		}
-    //	}
-    //}
-}
-
-//JQUERY EXPANDABLE MOBILE MENU - temporary until we write our own JS in new library
-
-.js-nav-hidden {
-    @include breakpoint(sm) {
-        display: none;
-    }
-}
-
-.js-expandable-active {
-    @include breakpoint(sm) {
-        & > a {
-            background-color: $black;
-            //border-bottom: 1px solid $thunder;
-        }
-
-        & ul {
-            display: block !important;
-        }
-    }
-}
-
-.nav__top-level-duplicate {
-    @extend .primary-nav__child-item;
-
-    & > a {
-        @extend .primary-nav__child-link;
-    }
-
-    @include breakpoint(md) {
-        display: none;
-    }
-}
-
-//Add plus symbol - class used for JS too
-.js-expandable {
-    @include breakpoint(sm) {
-        & > a {
-            &:before {
-                position: absolute;
-                color: $light-grey;
-                content: '+';
-                left: $col;
-
-                @if $old-ie == true {
-                    content: '';
-
-                }
-            }
-        }
-
-        &-active {
-            & > a {
-                &:before {
-                    content: '';
-                }
-            }
-        }
-    }
-}
-
-//Menu and search controls - TODO rewrite with mobile
-.nav--controls {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-    @include breakpoint(md) {
-        display: none;
-    }
-
-    &__item {
-        padding: 0;
-        margin: 0;
-    }
-
-    &__menu {
-        background-color: $dark-grey;
-        font-size: 17px;
-        float: left;
-        width: 50%;
-        //padding-left: $col;
-        padding: $baseline*2 $col;
-        color: $light-grey;
-        border-right: 1px solid $black;
-    }
-
-    &__search {
-        background-color: $dark-grey;
-        font-size: 17px;
-        float: left;
-        width: 50%;
-        //padding-left: $col;
-        padding: $baseline*2 $col;
-        color: $light-grey;
-        // border-bottom: 1px solid $ship-grey;
-        // margin-bottom: -1px;
-    }
-}
-
-.menu-is-expanded {
-    & > a {
-        background-color: $dark-grey;
-    }
-}
-
-.search-is-expanded {
-    & > a {
-        background-color: $dark-grey;
-    }
-}
-
-.nav-main--hidden {
-    @include breakpoint(sm) {
-        display: none;
-    }
-    display: block;
-}
-
-.nav-search--hidden {
-    @include breakpoint(sm) {
-        display: none;
-    }
-    display: block;
 }
 
 // BETA BANNER
+.bar--new-site {
+    height: 116px;
+    background-color: $dark-purple;
+    color: $white;
 
-.beta-banner {
-    background-color: $mid-yellow;
-
-    @media print {
-        display: none;
+    & .col-wrap {
+        margin-top: .5%;
     }
 
-    p {
+    & span {
+        margin-left: -5px;
+        display: inline;
+    }
+
+    & h2 {
         margin: 0;
-        //padding: 7px 0 9px 0;
+        line-height: 30px;
+    }
 
-        & > a {
-            color: $dark-grey;
-            text-decoration: underline;
+    & p {
+        margin: 0;
+        font-size: 21px;
+        line-height: 21px;
+    }
 
-            &:hover,
-            &:focus {
-                color: $black;
-            }
+    & a {
+        color: $white;
+        border-bottom-color: $white;
+    }
 
+    & #oldsite {
+        margin-top: 1.4%;
+
+        & p {
+            margin-top: 1%;
+            padding: 10px;
+            text-align: center;
+            border: 2px solid $white;
         }
     }
 
-}
+    @include breakpoint(xs) {
+        height: 100%;
 
-// HEADER - LOGO, LANGUAGE SELECTION AND SECONDARY NAV LINKS
-
-// Header
-.header {
-    padding: 15px 0 9px 0;
-    position: relative; // So language toggle has relative parent
-}
-
-// Logo
-.main-logo {
-    display: block;
-
-    @include breakpoint(sm) {
-        height: $baseline * 6;
-        padding: 2px 0 6px 0; //off-grid on mobile otherwise
-    }
-
-    @include breakpoint(md) {
-        height: 39px;
-        margin-top: 2px;
+        & .col-wrap {
+            margin-bottom: 8px;
+        }
     }
 }
 
 // Secondary navigation list
 .secondary-nav {
-
-    // Fix for old-ie hiding mobile--hide class
-    @if $old-ie == false {
-        @include breakpoint(sm) {
-            display: none;
-        }
-    }
-
     &__list {
         float: right;
         list-style: none;
@@ -484,22 +270,124 @@
 
 }
 
-// 'Skip to main content' keyboard tabbable link
-.skiplink {
+.mega-menu {
+    display: none;
+    width: 100%;
+    min-height: 480px;
+    padding: 40px 0;
+    background: $very-light-grey;
     position: absolute;
-    left: -99999px;
+    top: 36px;
+    margin-bottom: 40px;
 
-    &:focus {
-        background: $dark-grey;
-        color: $white;
-        top: 0;
-        right: 0;
-        left: 0;
-        margin: 0 auto;
-        z-index: 10;
-        width: ($col * 10);
-        padding: 6px 0 10px 0;
-        font-size: 14px;
-        text-align: center;
+    &__popular {
+        padding-right: 3.058824%;
+        /*border-right: 1px solid #B3B3B3;*/
     }
+
+    &__popular:before {
+        content: "";
+        position: absolute;
+        right: 5.5%;
+        background: $light-grey; /*#B3B3B3;*/
+        height: 100%;
+        width: 1px;
+    }
+
+    & h1 {
+        margin-top: 0;
+    }
+
+    & h2:first-of-type {
+        border-top: 0;
+        padding-top: 0;
+    }
+
+    & h2 {
+        border-top: 1px solid $light-grey;
+        border-bottom: 1px solid $light-grey;
+        padding-bottom: 12px;
+        padding-top: 12px;
+    }
+
+    & li {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+.wrapper--header {
+    background: $light-grey;
+}
+
+.header {
+    padding: 0 0 24px 0;
+    background: $very-light-grey;
+}
+
+.main-logo {
+    a {
+        border-bottom: 0;
+    }
+
+    img {
+        padding-top: 16px;
+    }
+}
+
+.language-nav {
+    &__list {
+        list-style: none;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+        background: $white;
+        float: right;
+    }
+
+    &__item {
+        float: left;
+        padding: 8px 16px;
+        margin: 0;
+    }
+}
+
+.mega-menu {
+    &-wrap {
+        overflow: visible !important;
+        padding: 0 1.529412%;
+        position: relative;
+        z-index: 10;
+    }
+
+    &-active-bg {
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+    }
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid $light-grey;
+    margin: 0;
+    padding: 0;
+}
+
+.no-list-style__list {
+    list-style: none;
+    margin: 0 10px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.no-list-style__list li {
+    display: inline;
+    margin: 0 6px;
 }

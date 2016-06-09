@@ -1,6 +1,12 @@
 //_news-tile
 
 .news-tile {
+  span {
+    float: right;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+  }
 
   @include breakpoint(xs) {
     position: relative;
@@ -55,6 +61,20 @@
       }
     }
   }
+}
+
+.news-title {
+  footer {
+    & p {
+      margin: 40px 0 0 0;
+      padding: 0;
+    }
+  }
+
+  span {
+    margin-bottom: 4px;
+  }
+
 }
 
 .horizontal-separator {

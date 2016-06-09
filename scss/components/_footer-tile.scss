@@ -25,3 +25,23 @@
   content: "";
   border-right: 0;
 }
+
+.footer-no-style__list {
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+
+  li + li:before {
+    content: " | ";
+    font-weight: 100;
+    padding: 0 2px;
+    color: $orange-accessible;
+  }
+}
+
+.footer-no-style__list li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}

@@ -38,14 +38,14 @@ $xs-grid-cols: 4;
   //    }
   //  }
   //}
-  //
-  //@include breakpoint(md) {
-  //  @for $i from 1 through $complex-grid-cols {
-  //    &--fluid-md-#{$i} {
-  //      width: $col * $i;
-  //    }
-  //  }
-  //}
+
+  @include breakpoint(md) {
+    @for $i from 1 through $complex-grid-cols {
+      &--fluid-md-#{$i} {
+        width: $col * $i;
+      }
+    }
+  }
 
   @include breakpoint(sm) {
     @for $i from 1 through $complex-grid-cols {

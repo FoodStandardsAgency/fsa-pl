@@ -1,10 +1,10 @@
 //_accordions.scss
 
 .accordion--header {
-  background-color: #F2F2F2;
+  background-color: $very-light-grey;
   padding: 8px 4px;
   margin-bottom: 12px;
-  border-bottom: 1px solid #97999B;
+  border-bottom: 1px solid $mid-grey;
 
   & h5 {
     margin: 0;

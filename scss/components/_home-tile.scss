@@ -9,6 +9,13 @@
     margin-top: 16px;
   }
 
+  span {
+    float: right;
+    position: absolute;
+    right: 20px;
+    bottom: 22px;
+  }
+
   @include breakpoint(xs) {
     position: relative;
     overflow: visible;
@@ -53,12 +60,19 @@
 }
 
 .home-news-tile {
-  h1 a {
-    color: $dark-grey;
+  h4 {
+    padding-bottom: 16px;
   }
 
   p {
     margin: 14px 0;
+  }
+
+  span {
+    float: right;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
   }
 
   @include breakpoint(xs) {
@@ -158,27 +172,75 @@
   border-left: 0;
   border-right: 0;
   border-top: 0;
-  margin: 20px 0;
 }
 
-.pdf-separator-dotted {
+.style-download {
+  padding: 20px;
+  background-color: $very-light-grey;
+}
+
+.separator-download {
   border: 7px dotted $mid-grey;
   border-image-source: url('../../img/dots.svg');
   border-image-slice: 25% 25%;
   border-image-repeat: round;
   border-left: 0;
   border-right: 0;
-  margin: 0 0 8px 8px;
+  margin: 8px 0 0 8px;
   padding: 16px 0;
 
-  &:before {
+  &.pdf:before {
     content: '';
-    padding-left: 55px;
-    margin: 0;
-    height: 50px;
-    background-image: url("../../img/pdf.png");
-    background-repeat: no-repeat;
-    background-size: 50px;
+    height: 45px;
+    width: 40px;
+    background: url($png) -16px -215px no-repeat;
+    margin: -8px 10px 0 0;
+    float: left;
+    display: inline-block;
+  }
+  &.doc:before {
+    content: '';
+    height: 45px;
+    width: 40px;
+    background: url($png) -69px -215px no-repeat;
+    margin: -8px 10px 0 0;
+    float: left;
+    display: inline-block;
+  }
+  &.json:before {
+    content: '';
+    height: 45px;
+    width: 40px;
+    background: url($png) -123px -215px no-repeat;
+    margin: -8px 10px 0 0;
+    float: left;
+    display: inline-block;
+  }
+  &.xls:before {
+    content: '';
+    height: 45px;
+    width: 40px;
+    background: url($png) -177px -215px no-repeat;
+    margin: -8px 10px 0 0;
+    float: left;
+    display: inline-block;
+  }
+  &.csv:before {
+    content: '';
+    height: 45px;
+    width: 40px;
+    background: url($png) -231px -215px no-repeat;
+    margin: -8px 10px 0 0;
+    float: left;
+    display: inline-block;
+  }
+  &.file:before {
+    content: '';
+    height: 45px;
+    width: 40px;
+    background: url($png) -283px -215px no-repeat;
+    margin: -8px 10px 0 0;
+    float: left;
     display: inline-block;
   }
 
@@ -213,76 +275,37 @@
 
 .jumbotron {
   height: 450px;
+  padding-left: 0;
   background: url('../../img/fsa-home-main.png') no-repeat;
   position: relative;
   & .col-wrap {
     position: absolute;
     bottom: 0;
+    left: 0;
   }
   & h2 {
     text-align: center;
-    color: #51284F;
+    color: $dark-purple;
   }
   & button {
-    color: #FFF;
-    margin: 0 32%;
+    color: $white;
+    margin: 0 7%;
   }
+
 }
 
-.bar--new-site {
-  height: 116px;
-  background-color: $dark-purple;
-  color: $white;
-
-  & .col-wrap {
-    margin-top: .5%;
-  }
-
-  & span {
-    margin-left: -5px;
-    display: inline;
-  }
-
-  & h2 {
-    margin: 0;
-    line-height: 30px;
-  }
-
-  & p {
-    margin: 0;
-    font-size: 21px;
-    line-height: 21px;
-  }
-
-  & a {
-    color: $white;
-    border-bottom-color: $white;
-  }
-
-  & #oldsite {
-    margin-top: 1.4%;
-
-    & p {
-      margin-top: 1%;
-      padding: 10px;
-      text-align: center;
-      border: 2px solid $white;
-    }
-  }
-
-  @include breakpoint(xs) {
-    height: 100%;
-
-    & .col-wrap {
-      margin-bottom: 8px;
-    }
-  }
+.jumbo-share {
+  position: absolute;
+  bottom: 24px;
+  right: 12%;
+  background-color: $very-light-grey;
+  color: $dark-purple;
 }
 
 .regional {
   display: inline-block;
   padding: 8px 12px;
-  background-color: #F2F2F2;
+  background-color: $very-light-grey;
   font-size: 16px;
   font-weight: 700;
 }
