@@ -9,10 +9,7 @@
   background-color: #F2F2F2;
   margin: 4px 12px 4px 0;
   display: inline-block;
-
-  & a {
-    border-bottom: 0 solid white;
-  }
+  border-bottom: 0 solid white;
 
   & span {
     border-bottom: 1px dotted $orange-accessible;
