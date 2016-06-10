@@ -8,6 +8,7 @@ table {
 caption {
   color: $dark-grey;
   text-align: left;
+  @extend .font-size--h5;
 }
 th {
   text-align: left;
@@ -26,13 +27,13 @@ th {
   > tfoot {
     > tr {
       > th {
-        padding: 8px 4px;
+        padding: 8px 8px;
         line-height: 18px;
         vertical-align: top;
         font-weight: 400;
       }
       > td {
-        padding: 8px 4px;
+        padding: 8px 8px;
         line-height: 18px;
         vertical-align: top;
         font-weight: 100;

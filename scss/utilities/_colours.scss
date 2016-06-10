@@ -30,6 +30,7 @@ $light-blue:	#8DC8E8;
 $very-light-grey: #F2F2F2;
 $text: #1A1A1A;
 $orange-accessible: #AA3511;
+$teal-accessible: #006671;
 
 //transparent
 $very-light-grey-transp: rgba($very-light-grey, .85);
@@ -39,42 +40,43 @@ $light-yellow-transp: rgba($light-yellow, .85);
 
 //Font colours
 $light-text:    $white;
-$dark-text:     $dark-grey;
+$dark-text:     $text;
 
 //Colour types
 $primary:       $dark-green;
 $secondary:     $very-light-grey;
 
 //$tertiary:
-$active:        $dark-grey;
+$active:        $text;
 $disabled:      $light-grey;
-$census:		$mid-purple;
 $error:         $mid-red;
 
 $colours: (
-		//name          		//primary 			//secondary			//tertiary
-		("dark-green",			$dark-green, 		$light-text,		$light-text)
-		("mid-green",   		$mid-green,     	$dark-text,			$dark-text)
-        ("light-green", 		$light-green, 		$dark-text,			$dark-text)
-		("black", 		    	$black, 	    	$light-text,		$light-text)
-		("dark-grey", 	    	$dark-grey,     	$light-text,		$light-text)
-		("mid-grey", 			$mid-grey, 			$dark-text,			$dark-text)
-		("light-grey",      	$light-grey, 		$dark-text, 		$dark-text)
-		("white", 	        	$white, 	    	$dark-text, 		$dark-text)
-		("mid-red",		    	$mid-red, 			$dark-text,			$dark-text)
-		("orange", 	        	$orange, 			$dark-text,			$dark-text)
-		("mid-yellow", 	    	$mid-yellow, 		$dark-text,			$dark-text)
-		("mid-purple", 	    	$mid-purple,		$light-text,		$light-text)
-		("light-purple", 		$light-purple, 		$light-text,		$dark-text)
-		("mid-blue",			$mid-blue, 			$dark-text,			$dark-text)
-		("dark-red", 	    	$dark-red, 			$dark-text)
-		("light-red",			$light-red, 		$dark-text)
-		("light-yellow", 		$light-yellow, 		$dark-text)
-		("light-yellow", 		$light-yellow, 		$dark-text)
-		("teal", 		    	$teal, 		    	$dark-text)
-		("light-blue", 	    	$light-blue, 		$dark-text)
-        ("dark-purple",     	$dark-purple,   	$light-text)
-        ("very-light-grey", 	$very-light-grey,   $dark-text)
+		//colour          		//colourcode		//fontcolourcode	//anchorcolourcode
+		("dark-green",			$dark-green, 		$light-text,		$light-text),
+		("mid-green",   		$mid-green,     	$dark-text,			$dark-text),
+        ("light-green", 		$light-green, 		$dark-text,			$dark-text),
+		("black", 		    	$black, 	    	$light-text,		$light-text),
+		("dark-grey", 	    	$dark-grey,     	$light-text,		$light-text),
+		("mid-grey", 			$mid-grey, 			$dark-text,			$dark-text),
+		("light-grey",      	$light-grey, 		$dark-text, 		$dark-text),
+		("white", 	        	$white, 	    	$dark-text, 		$dark-text),
+		("mid-red",		    	$mid-red, 			$dark-text,			$dark-text),
+		("orange", 	        	$orange, 			$dark-text,			$dark-text),
+		("mid-yellow", 	    	$mid-yellow, 		$dark-text,			$dark-text),
+		("mid-purple", 	    	$mid-purple,		$light-text,		$light-text),
+		("light-purple", 		$light-purple, 		$light-text,		$light-text),
+		("mid-blue",			$mid-blue, 			$light-text,		$light-text),
+		("dark-red", 	    	$dark-red, 			$light-text),
+		("light-red",			$light-red, 		$dark-text),
+		("light-yellow", 		$light-yellow, 		$dark-text),
+		("light-yellow", 		$light-yellow, 		$dark-text),
+		("teal", 		    	$teal, 		    	$dark-text),
+		("light-blue", 	    	$light-blue, 		$dark-text),
+        ("dark-purple",     	$dark-purple,   	$light-text),
+        ("very-light-grey", 	$very-light-grey,   $dark-text),
+        ("orange-accessible", 	$orange-accessible, $light-text),
+        ("teal-accessible", 	$teal-accessible,   $light-text),
 );
 
 

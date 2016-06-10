@@ -7,7 +7,7 @@ $png: '../../img/fsa-sprite.png';
 
   &-linkedin {
     &--black {
-      background-position: -17px -87px;
+      background-position: -16px -88px;
       width: 31px;
       height: 31px;
     }
@@ -17,12 +17,12 @@ $png: '../../img/fsa-sprite.png';
       height: 16px;
     }
     &--white {
-      background-position: -17px -146px;
+      background-position: -17px -156px;
       width: 31px;
       height: 31px;
     }
     &--white-small {
-      background-position: -16px -41px;
+      background-position: -16px -46px;
       width: 16px;
       height: 16px;
     }
@@ -30,12 +30,12 @@ $png: '../../img/fsa-sprite.png';
 
   &-google {
     &--black {
-      background-position: -99px -87px;
-      width: 30px;
+      background-position: -96px -88px;
+      width: 31px;
       height: 31px;
     }
     &--white {
-      background-position: -17px -146px;
+      background-position: -96px -156px;
       width: 31px;
       height: 31px;
     }
@@ -45,7 +45,7 @@ $png: '../../img/fsa-sprite.png';
       height: 16px;
     }
     &--white-small {
-      background-position: -56px -41px;
+      background-position: -56px -46px;
       width: 16px;
       height: 16px;
     }
@@ -53,13 +53,13 @@ $png: '../../img/fsa-sprite.png';
 
   &-twitter {
     &--black {
-      background-position: -180px -87px;
-      width: 38px;
+      background-position: -177px -88px;
+      width: 37px;
       height: 31px;
     }
     &--white {
-      background-position: -180px -146px;
-      width: 38px;
+      background-position: -177px -156px;
+      width: 37px;
       height: 31px;
     }
     &--black-small {
@@ -68,7 +68,7 @@ $png: '../../img/fsa-sprite.png';
       height: 16px;
     }
     &--white-small {
-      background-position: -96px -41px;
+      background-position: -96px -46px;
       width: 20px;
       height: 16px;
     }
@@ -76,13 +76,13 @@ $png: '../../img/fsa-sprite.png';
 
   &-facebook {
     &--black {
-      background-position: -268px -87px;
-      width: 17px;
+      background-position: -264px -88px;
+      width: 16px;
       height: 31px;
     }
     &--white {
-      background-position: -268px -146px;
-      width: 17px;
+      background-position: -264px -156px;
+      width: 16px;
       height: 31px;
     }
     &--black-small {
@@ -91,7 +91,7 @@ $png: '../../img/fsa-sprite.png';
       height: 16px;
     }
     &--white-small {
-      background-position: -140px -41px;
+      background-position: -140px -46px;
       width: 9px;
       height: 16px;
     }
@@ -99,13 +99,13 @@ $png: '../../img/fsa-sprite.png';
 
   &-share {
     &--black {
-      background-position: -336px -87px;
-      width: 27px;
+      background-position: -330px -88px;
+      width: 28px;
       height: 31px;
     }
     &--white {
-      background-position: -336px -146px;
-      width: 27px;
+      background-position: -330px -156px;
+      width: 28px;
       height: 31px;
     }
     &--black-small {
@@ -114,7 +114,7 @@ $png: '../../img/fsa-sprite.png';
       height: 16px;
     }
     &--white-small {
-      background-position: -173px -41px;
+      background-position: -173px -46px;
       width: 14px;
       height: 16px;
     }
@@ -122,13 +122,13 @@ $png: '../../img/fsa-sprite.png';
 
   &-home {
     &--black {
-      background-position: -399px -77px;
-      width: 50px;
+      background-position: -393px -78px;
+      width: 49px;
       height: 42px;
     }
     &--white {
-      background-position: -399px -136px;
-      width: 50px;
+      background-position: -393px -146px;
+      width: 49px;
       height: 42px;
     }
     &--black-small {
@@ -137,9 +137,42 @@ $png: '../../img/fsa-sprite.png';
       height: 21px;
     }
     &--white-small {
-      background-position: -204px -36px;
+      background-position: -204px -41px;
       width: 26px;
       height: 21px;
+    }
+  }
+
+  &-external {
+    background-position: -543px -85px;
+    width: 37px;
+    height: 37px;
+
+    &-small {
+      background-position: -279px -10px;
+      width: 19px;
+      height: 19px;
+    }
+
+    &--black {
+      background-position: -484px -85px;
+      width: 37px;
+      height: 37px;
+    }
+    &--white {
+      background-position: -484px -153px;
+      width: 37px;
+      height: 37px;
+    }
+    &--black-small {
+      background-position: -250px -10px;
+      width: 19px;
+      height: 19px;
+    }
+    &--white-small {
+      background-position: -250px -44px;
+      width: 19px;
+      height: 19px;
     }
   }
 
@@ -223,12 +256,12 @@ $png: '../../img/fsa-sprite.png';
 
   &-separator {
     &--large {
-      font-size:40px;
+      font-size: 40px;
       font-weight: 100;
       padding: 0 8px;
     }
     &--small {
-      font-size:20px;
+      font-size: 20px;
       font-weight: 100;
       padding: 0 5px;
     }
@@ -238,13 +271,12 @@ $png: '../../img/fsa-sprite.png';
     //For use in situations where icons are automatically added but not wanted and a global solution isn't viable
     display: none !important;
   }
-
 }
 
 //Add external link icon (:not excludes domains)
 a[target=_blank]:after {
   @extend .icon;
-  @extend .icon-share--black-small;
+  @extend .icon-external-small;
   content: "";
   margin-left: 8px;
 }
