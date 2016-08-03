@@ -1,0 +1,35 @@
+{
+    "name": "fsa-pl",
+    "version": "1.0.1",
+    "description": "Pattern library builder",
+    "main": "",
+    "config": {
+        "js": "js/thirdparty/jquery.js js/thirdparty/doubletaptogo.js js/app.js js/app/display.js js/thirdparty/jquery.minical.js js/app/viewport-size.js js/app/nav.js js/app/table.js js/app/show-and-hide.js js/app/sticky-scroll.js js/app/date-picker.js js/app/table-of-contents.js js/app/language-toggle.js js/app/mobile-filters.js js/app/equal-height.js js/app/print-page.js js/app/hover-state.js js/app/scroll.js"
+    },
+    "scripts": {
+        "clean": "",
+        "minify-imgs": "imagemin dist/img/ dist/img",
+        "build-css": "node-sass --output-style compressed scss/main.scss dist/css/main.css && node-sass --output-style compressed scss/pdf.scss dist/css/pdf.css",
+        "build-ie-9-css": "node-sass --output-style compressed scss/main.scss dist/css/ie-9.css | blessc dist/css/ie-9.css -f -x",
+        "build-old-ie-css": "node-sass --output-style compressed scss/old-ie.scss dist/css/old-ie.css | blessc - dist/css/old-ie.css -f -x",
+        "build-js": "uglifyjs js/thirdparty/jquery.js js/thirdparty/doubletaptogo.js js/app.js js/app/display.js js/thirdparty/jquery.minical.js js/app/viewport-size.js js/app/nav.js js/app/table.js js/app/show-and-hide.js js/app/sticky-scroll.js js/app/date-picker.js js/app/table-of-contents.js js/app/language-toggle.js js/app/mobile-filters.js js/app/equal-height.js js/app/print-page.js js/app/hover-state.js js/app/scroll.js --compress --mangle -o dist/js/main.js",
+        "build": "npm run build-css && npm run build-old-ie-css && npm run build-ie-9-css  && npm run build-js",
+        "postinstall": "npm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:methods/fsa-pl.git"
+    },
+    "license": "Open Government License v3.0",
+    "dependencies": {
+        "replace": "latest",
+        "node-sass": "latest",
+        "uglify-js": "latest",
+        "bless": "3.0.3"
+    },
+    "devDependencies": {
+        "catw": "latest",
+        "onchange": "latest",
+        "imagemin-cli": "latest"
+    }
+}
