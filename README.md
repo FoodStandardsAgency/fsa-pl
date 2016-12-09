@@ -1,9 +1,5 @@
 # Pattern library
 
-A tile design friendly pattern library with a simple responsive grid inspired by BBC’s GEL consisting of 16px columns.
-
-Use the [pattern library's site][site] to see examples of how to use it.
-
 ## How to install and run
 
 1. Clone this repo onto your machine.
