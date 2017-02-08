@@ -4,7 +4,7 @@ Pattern Library Builder
 
 ### About this application
 
-This application is written using the [Node.js](https://nodejs.org/en/) JavaScript runtime and the [Python](https://www.python.org/download/releases/2.7/) Simple HTTP Server.
+This application is written using the [Node.js](https://nodejs.org/en/) JavaScript runtime and is served locally by the [Python](https://www.python.org/download/releases/2.7/) Simple HTTP Server.
 
 ### The purpose
 
