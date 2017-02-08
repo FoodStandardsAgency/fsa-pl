@@ -1,23 +1,47 @@
-# Pattern library
 
-## How to install and run
+Pattern Library Builder
+=======================
 
-1. Clone this repo onto your machine.
-2. Install [Node][node], [NPM][npm] and [Python][python].
-3. Run `npm install` from the root of the repo you've cloned onto your machine.
-4. Use the JS and CSS files in the `dist` directory.
+### About this application
 
-Optional (for local development of the pattern library):
-* New JS files go into the `js` directory and the path added into the config object in the package.json. You'll need to restart `npm run watch` afterwards.
-* New SCSS files should be added to the `scss` directory. Add the path into `main.scss` and `old-ie.scss`. 
+This application is written using the [Node.js](https://nodejs.org/en/) JavaScript runtime and the [Python](https://www.python.org/download/releases/2.7/) Simple HTTP Server.
 
-[node]: <https://nodejs.org/en/>
-[npm]: <https://www.npmjs.com/>
-[python]: <https://www.python.org/>
+### The purpose
 
-In windows:
-1. create a dist/js/main.js
-2. rename package.json to package-linux.json
-2. rename package-win.json to package.json and run `npm install`
-3. check and delete fsevents from node_modules if it exists
+The application processes the sass and Javascript used in the Food Standard Agency Pattern Library User Interface into css and minified Javascript.
+
+### Prerequisites
+
+In order to run the tool locally in development you'll need the following :
+
+- [Node.js](https://nodejs.org/en/)
+- [Python](https://www.python.org/download/releases/2.7/)
+- [Git](https://git-scm.com/downloads) 
+
+
+### Getting Started
+
+Run the following from the command line to download the repository and change into the directory:
+
+```
+git clone git@github.com:methods/fsa-pl.git
+
+cd fsa-pl
+```
+
+The Javascript and CSS files for use in the pattern library are located in the `dist` directory.
+
+### Local development of the pattern library
+
+- New Javascript files go into the `js` directory and the corresponding path must be added into the config object in the package.json. 
+- You'll need to restart `npm run watch` afterwards for these changes to take effect.
+- New SCSS files should be added to the `scss` directory. Add the corresponding path into `main.scss` and `old-ie.scss`. 
+
+
+### Local development of the pattern library in Windows
+
+- Create a dist/js/main.js
+- Rename the package.json file to package-linux.json
+- Rename the package-win.json file to package.json and run `npm install` for the changes to take effect
+- Check and delete the fsevents folder from node_modules if it exists
 
